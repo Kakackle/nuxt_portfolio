@@ -123,6 +123,32 @@ Projekt ecommerce, chcialbym zeby moze z jakimis serwisami jak mailowanie, place
 - Oddzielny model na kody discountowe z terminem trwalosci TODO: ? rzeczywiste sprawdzanie tego terminu
 
 
-# prawdziwe TODO: dokladniej rozpisac funkcjonalnosci? bo tutaj haslami, albo raczej tak bardziej atrakcyjnie, marketingowo, zwiezle zeby przekazywac zasade dzialania pod skriny i wybrac najwazniejsze
+## prawdziwe TODO: dokladniej rozpisac funkcjonalnosci? bo tutaj haslami, albo raczej tak bardziej atrakcyjnie, marketingowo, zwiezle zeby przekazywac zasade dzialania pod skriny i wybrac najwazniejsze
+
+## prawdziwe TODO: cos o projektach z przeszlosci:
+- cos ze opencv
+- cos ze unity, c#, emgu
+- esp
 
 
+# Strony
+jakie strony chcialbym zawrzec:
+
+Home
+
+About - ogolnei o sobie
+
+Project - karty / F-section z projektami i jesli zdeployowane to tez linki do nich itd i opisy i linki do gitow i idk
+
+czy raczej liczne strony przeznaczone na projekt dokladnie kazda i projects je zbiera?
+
+Bo moznaby tak zrobic, ale to dosyc duzo pisania
+
+Other - potrzebne wlasciwie?
+
+
+# Umiejetnosci 
+
+Ehhh
+
+moze cos tego pythona podkreslic w roznych aspektach i glebiej
