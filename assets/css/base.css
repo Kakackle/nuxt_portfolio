@@ -5,6 +5,26 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.base1{
-    background-color: red;
+body{
+    background-color: var(--purp-deep);
+    width: 100%;
 }
+
+:root{
+    --purp-dark: #10002B;
+    --purp-deep: #240046;
+    --purp-deep-light: #3C096C;
+    --purp-plus: #5A189A;
+    --purp: #7B2CBF;
+    --purp-light: #C77DFF;
+    --purp-soft: #E0AAFF;
+    --gray-light: #E9E9E9;
+    --almost-white: #FEFEFE;
+    --max-page-width: 1420px;
+    --section-margin: 20px;
+    --max-page-padding: 20px;
+}
+
+/* .base1{
+    background-color: red;
+} */
