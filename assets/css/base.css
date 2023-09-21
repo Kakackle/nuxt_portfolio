@@ -46,6 +46,11 @@ body{
     text-decoration-color: var(--purp-soft);
 }
 
+.hover:hover{
+    filter: brightness(0.75);
+    cursor:pointer;
+}
+
 /* .base1{
     background-color: red;
 } */
