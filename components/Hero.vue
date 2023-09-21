@@ -85,6 +85,8 @@
     display: flex;
     flex-direction: column;
     /* line-height: -4px; */
+    /* background-color: var(--purp-deep);
+    padding: 10px; */
 }
 
 .name-1, .name-3{
@@ -95,7 +97,7 @@
     letter-spacing: 2px;
     /* text-shadow: -4px 0 var(--purp), 0px 4px var(--purp), 4px 0 var(--purp), 0 -4px var(--purp); */
     -webkit-text-fill-color: var(--purp-deep-light);
-    -webkit-text-stroke: 1px var(--purp);
+    -webkit-text-stroke: 3px var(--purp);
     /* text-stroke: 2px var(--purp); */
     margin: 0;
     /* line-height: -1px; */

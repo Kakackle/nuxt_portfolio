@@ -4,8 +4,10 @@
 
 <template>
     <main class="index-main">
-        <Hero class="hero"></Hero>
-        <Projects class="projects"></Projects>
+        <Hero class="hero section-margin"></Hero>
+        <Projects class="projects section-margin"></Projects>
+        <ProjectsInDepth class="section-margin"></ProjectsInDepth>
+        <ProjectsOther class="section-margin"></ProjectsOther>
     </main>
     <!-- <p>Also, here's an icon: <Icon name="uil:github" color="black" /></p> -->
 </template>

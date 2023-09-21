@@ -22,7 +22,7 @@
     justify-content: center;
     align-items: center;
     height: 60px;
-    background-color: var(--purp-deep);
+    /* background-color: var(--purp-deep); */
 }
 .nav-div{
     width: 100%;
