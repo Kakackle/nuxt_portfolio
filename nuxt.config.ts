@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   modules: [
     ['@nuxtjs/google-fonts', {
         families: {
-          Roboto: true,
+          Roboto: [300,400,500,600,700],
         }
     }],
     'nuxt-icon',

@@ -4,7 +4,8 @@
 
 <template>
     <main class="index-main">
-        <Hero></Hero>
+        <Hero class="hero"></Hero>
+        <Projects class="projects"></Projects>
     </main>
     <!-- <p>Also, here's an icon: <Icon name="uil:github" color="black" /></p> -->
 </template>
@@ -18,5 +19,6 @@
     max-width: var(--max-page-width);
     padding: 0px var(--max-page-padding);
     /* background-color: var(--purp-deep); */
+    margin: 0 auto;
 }
 </style>
