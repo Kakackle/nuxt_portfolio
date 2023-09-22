@@ -18,19 +18,19 @@
             <p class="bio">Web dev, engineer, persistent learner, self-called musician, creative extraordinaire, Automation Engineer by trade. Łódź lover</p>
             <div class="skills">
                 <div class="htmlcssjs">
-                    <img class="css" src="../assets/img/skills/css 1.png">
-                    <img class="html" src="../assets/img/skills/html 1.png">
-                    <img class="js" src="../assets/img/skills/js 1.png">
+                    <img class="css" src="../assets/img/skills/css1.png">
+                    <img class="html" src="../assets/img/skills/html1.png">
+                    <img class="js" src="../assets/img/skills/js1.png">
                 </div>
-                <img class="skill-img" src="../assets/img/skills/vue 1.png">
-                <img class="skill-img" src="../assets/img/skills/django 1.png">
-                <img class="skill-img" src="../assets/img/skills/drf 1.png">
-                <img class="skill-img" src="../assets/img/skills/python 1.png">
-                <img class="skill-img" src="../assets/img/skills/aws 1.png">
-                <img class="skill-img" src="../assets/img/skills/docker 1.png">
-                <img class="skill-img" src="../assets/img/skills/figma 1.png">
-                <img class="skill-img" src="../assets/img/skills/tailwind 1.png">
-                <img class="skill-img" src="../assets/img/skills/sass 1.png">
+                <img class="skill-img" src="../assets/img/skills/vue1.png">
+                <img class="skill-img" src="../assets/img/skills/django1.png">
+                <img class="skill-img" src="../assets/img/skills/drf1.png">
+                <img class="skill-img" src="../assets/img/skills/python1.png">
+                <img class="skill-img" src="../assets/img/skills/aws1.png">
+                <img class="skill-img" src="../assets/img/skills/docker1.png">
+                <img class="skill-img" src="../assets/img/skills/figma1.png">
+                <img class="skill-img" src="../assets/img/skills/tailwind1.png">
+                <img class="skill-img" src="../assets/img/skills/sass1.png">
             </div>
         </div>
     </section>

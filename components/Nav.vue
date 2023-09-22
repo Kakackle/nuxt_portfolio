@@ -10,7 +10,7 @@
                 <li class="link"><NuxtLink to="/about">About</NuxtLink></li>
                 <li class="link"><NuxtLink to="/projects">Projects</NuxtLink></li>
                 <li class="link"><NuxtLink to="/other">Other</NuxtLink></li>
-                <!-- <li class="link"><NuxtLink to="/projects/blog">Blog</NuxtLink></li> -->
+                <li class="link"><NuxtLink to="/projects/blog">Blog</NuxtLink></li>
             </ul>
         </div>
     </nav>
