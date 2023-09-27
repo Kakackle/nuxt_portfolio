@@ -35,7 +35,7 @@ const indepth_show = ref(1);
                  v-if="projects_show"></Icon>
                 <div class="section-closed" v-else>
                     <!-- <p class="section-title">Most <span class="title-important"> important</span>projects</p> -->
-                    <p class="section-title">Most important projects</p>
+                    <p class="section-title">The projects in-depth</p>
                     <Icon name="ion:chevron-down-outline" color="var(--almost-white)"
                     class="collapse-icon"
                     ></Icon>

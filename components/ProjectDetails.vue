@@ -1,41 +1,35 @@
 <script setup>
-const getImageUrl = function(path){
-    return new URL(path, import.meta.url);
-}
+const props = defineProps(['project']);
+const project = props.project;
+const main_features = project.main_features;
+// console.log(`main_features: ${JSON.stringify(main_features)}`);
+const steps = project.steps;
 </script>
 
 <template>
 <div class="project-div">
     <div class="project-titles">
-        <p class="main-title">Fullstack Blog</p>
+        <p class="main-title">{{ project.title }}</p>
         <p class="sub-title">Main features:</p>
     </div>
     <div class="main-images">
-        <div class="img-desc">
-            <img class="main-img" :src="getImageUrl('../assets/img/projects/Home1Big.png')">
-            <p class="desc">Sortable, filtered with with new suggestions</p>
-        </div>
-        <div class="img-desc">
-            <img class="main-img" :src="getImageUrl('../assets/img/projects/Home1Big.png')">
-            <p class="desc">Rich post creation options thans to markdown syntax</p>
-        </div>
-        <div class="img-desc">
-            <img class="main-img" :src="getImageUrl('../assets/img/projects/Home1Big.png')">
-            <p class="desc">Accounts, comments, authorization systems</p>
+        <div class="img-desc" v-for="feature in main_features">
+            <img class="main-img" :src="getImageUrl(feature.img)">
+            <p class="desc">{{ feature.desc}}</p>
         </div>
     </div>
     <div class="steps">
         <div class="step step-1">
-            <img class="step-img" :src="getImageUrl('../assets/img/projects/Home4.png')">
-            <p class="desc">Sortable filtered feed with new suggestions</p>
+            <img class="step-img" :src="getImageUrl(steps[0].img)">
+            <p class="desc">{{ steps[0].desc }}</p>
         </div>
         <div class="step step-2">
-            <img class="step-img" :src="getImageUrl('../assets/img/projects/Home4.png')">
-            <p class="desc">Sortable filtered feed with new suggestions</p>
+            <img class="step-img" :src="getImageUrl(steps[1].img)">
+            <p class="desc">{{steps[1].desc}}</p>
         </div>
         <div class="step step-3">
-            <img class="step-img" src="../assets/img/projects/Home4.png">
-            <p class="desc">Sortable filtered feed with new suggestions</p>
+            <img class="step-img" :src="getImageUrl(steps[2].img)">
+            <p class="desc">{{steps[2].desc}}</p>
         </div>
     </div>
 </div>
@@ -79,7 +73,16 @@ const getImageUrl = function(path){
 }
 
 .main-img, .step-img{
-    background-color: var(--gray-light);
+    background-color: var(--purp-dark);
+    width: 300px;
+    height: 400px;
+    object-fit: contain;
+}
+
+.step-img{
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
 }
 
 .img-desc{
