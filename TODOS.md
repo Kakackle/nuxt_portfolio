@@ -1,4 +1,3 @@
-TODO: zwijanie podsekcji w projcts in depth?
 TODO: strona projektu blog i potem inne na wzor - lepiej po prostru sekcjami
 TODO: strona about
 
@@ -12,3 +11,5 @@ TODO: jakas animacja w tle calej strony prosta zapetlona
 TODO: przenoszenie / scrollowanie do naglowkow na stronie i do tego hover itd
 
 TODO: moze nie potrzebujesz image from url? i dloby rade odpowiednio z folderu public? moze
+
+TODO: skills na grid i DRF zajmuje dwie kratki a reszta jedna? idk, maybe

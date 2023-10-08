@@ -1,95 +1,82 @@
 [
     {
-       "title":"Django Instagram clone (with HTMX)",
-       "main_features":[
-          {
-             "img":"projects/Insta/Home.PNG",
-             "desc":"Infinite scroll post page with comments section previews, post liking, filtering by followed users etc"
-          },
-          {
-             "img":"projects/Insta/User_view.PNG",
-             "desc":"User profiles with followers, created posts, editing, authorization"
-          },
-          {
-             "img":"projects/Insta/post_view.PNG",
-             "desc":"..."
-          }
-       ],
-       "steps":[
-          {
-             "img":"projects/Insta/Grid_liked.PNG",
-             "desc":"Filtering posts by tags, description, following or being liked"
-          },
-          {
-             "img":"projects/Insta/New_post_form.PNG",
-             "desc":"Django forms with bootstrap styling"
-          },
-          {
-             "img":"projects/Insta/Edit_profile.PNG",
-             "desc":"Editing...."
-          }
-       ]
-    },
-    {
-        "title":"Vue frontend multi-user Blog with a Django Rest API",
-        "main_features":[
-           {
-              "img":"projects/Blog/Home.PNG",
-              "desc":"Paginated posts view with sorting and filtering by multiple data-based metrics"
-           },
-           {
-              "img":"projects/Blog/Post.PNG",
-              "desc":"Post view with markdown display, comments"
-           },
-           {
-              "img":"projects/Blog/api.PNG",
-              "desc":"API backend with openapi schema, ..."
-           }
-        ],
-        "steps":[
-           {
-              "img":"projects/Blog/login_drop.PNG",
-              "desc":"Accounts..."
-           },
-           {
-              "img":"projects/Blog/filtering.PNG",
-              "desc":"Filtering..."
-           },
-           {
-              "img":"projects/Blog/Post_create.PNG",
-              "desc":"Post preview..."
-           }
-        ]
-     },
-     {
+        "id": "Kalopsia",
         "title":"Django backend serving Vue frontend files on same domain through webpack",
         "main_features":[
            {
-              "img":"projects/Sklep/Home.PNG",
-              "desc":"Front-facing home view with product previews, 3d model, cta"
+              "img":"Sklep/Home.PNG",
+              "desc":"Front-facing home view with product previews, a changing banner, a 3D model viewer, functional newsletter signup"
            },
            {
-              "img":"projects/Sklep/product.PNG",
+              "img": "Sklep/page1.PNG",
+              "desc": "Store grid"
+           },
+           {
+              "img":"Sklep/page2.PNG",
               "desc":"Product view with reviews, desc tabs etc"
            },
            {
-              "img":"projects/Sklep/cart_view.PNG",
+              "img":"Sklep/page3.PNG",
               "desc":"Cart convertible into orders with addresses, discounts etc"
            }
         ],
-        "steps":[
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non arcu risus quis varius. In ante metus dictum at tempor. Mattis pellentesque id nibh tortor id aliquet. Non odio euismod lacinia at quis risus sed vulputate. Facilisis volutpat est velit egestas dui id ornare arcu. Quis ipsum suspendisse ultrices gravida dictum fusce."
+     },
+     {
+        "id": "Blog",
+        "title":"Vue frontend multi-user Blog with a Django Rest API",
+        "main_features":[
            {
-              "img":"projects/Sklep/dark_mode.PNG",
-              "desc":"Dark mode..."
+              "img":"Blog/Home.PNG",
+              "desc":"Paginated posts view with sorting and filtering by multiple data-based metrics"
            },
            {
-              "img":"projects/Sklep/order.PNG",
-              "desc":"Order view..."
+              "img":"Blog/Post.PNG",
+              "desc":"Post view with markdown display, comments"
            },
            {
-              "img":"projects/Sklep/cart_view.PNG",
-              "desc":"Dynamic cart tracking thanks to APi calls and backend-frotnent reactive communication"
+              "img":"Blog/api.PNG",
+              "desc":"API backend with openapi schema, ..."
            }
-        ]
+        ],
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non arcu risus quis varius. In ante metus dictum at tempor. Mattis pellentesque id nibh tortor id aliquet. Non odio euismod lacinia at quis risus sed vulputate. Facilisis volutpat est velit egestas dui id ornare arcu. Quis ipsum suspendisse ultrices gravida dictum fusce."
+     },
+    {
+       "id": "Insta",
+       "title":"Django Instagram clone (with HTMX)",
+       "main_features":[
+          {
+             "img":"Insta/Home.PNG",
+             "desc":"Infinite scroll post page with comments section previews, post liking, filtering by followed users etc"
+          },
+          {
+             "img":"Insta/Grid.PNG",
+             "desc":"User profiles with followers, created posts, editing, authorization"
+          },
+          {
+             "img":"Insta/signup_form.PNG",
+             "desc":"..."
+          }
+       ],
+       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non arcu risus quis varius. In ante metus dictum at tempor. Mattis pellentesque id nibh tortor id aliquet. Non odio euismod lacinia at quis risus sed vulputate. Facilisis volutpat est velit egestas dui id ornare arcu. Quis ipsum suspendisse ultrices gravida dictum fusce."
+    },
+    {
+        "id": "Forum",
+        "title":"Django Forum with Docker etc",
+        "main_features":[
+           {
+              "img":"Forum/Topic.PNG",
+              "desc":"Infinite scroll post page with comments section previews, post liking, filtering by followed users etc"
+           },
+           {
+              "img":"Forum/Post.PNG",
+              "desc":"User profiles with followers, created posts, editing, authorization"
+           },
+           {
+              "img":"Forum/markdown.PNG",
+              "desc":"..."
+           }
+        ],
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non arcu risus quis varius. In ante metus dictum at tempor. Mattis pellentesque id nibh tortor id aliquet. Non odio euismod lacinia at quis risus sed vulputate. Facilisis volutpat est velit egestas dui id ornare arcu. Quis ipsum suspendisse ultrices gravida dictum fusce."
      }
 ]

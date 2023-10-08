@@ -2,37 +2,41 @@
 const props = defineProps(['project']);
 const project = props.project;
 const main_features = project.main_features;
-// console.log(`main_features: ${JSON.stringify(main_features)}`);
-const steps = project.steps;
+const base_path = "_nuxt/static/img/projects/"
+// const img_path = base_path + card.img;
+const project_show = ref(1);
 </script>
 
 <template>
-<div class="project-div">
-    <div class="project-titles">
-        <p class="main-title">{{ project.title }}</p>
-        <p class="sub-title">Main features:</p>
+<section class="section-collapsible header" :id="project.id">
+    <Transition name="slide-fade">
+    <div class="project-div" v-if="project_show">
+        <div class="project-titles">
+            <p class="main-title">{{ project.title }}</p>
+            <p class="sub-title">Main features:</p>
+        </div>
+        <div class="main-images">
+            <div class="img-desc" v-for="feature in main_features">
+                <img class="main-img" :src="base_path + feature.img">
+                <p class="desc">{{ feature.desc}}</p>
+            </div>
+        </div>
+        <p class="desc">{{ project.desc }}</p>
     </div>
-    <div class="main-images">
-        <div class="img-desc" v-for="feature in main_features">
-            <img class="main-img" :src="getImageUrl(feature.img)">
-            <p class="desc">{{ feature.desc}}</p>
+    </Transition>
+    <!-- collapsible controls -->
+    <div class="collapse-controls hover" @click="project_show = !project_show">
+        <Icon name="ion:remove-outline" color="var(--almost-white)"
+            class="collapse-icon"
+            v-if="project_show"></Icon>
+        <div class="section-closed" v-else>
+            <p class="section-title">{{ project.title }}</p>
+            <Icon name="ion:chevron-down-outline" color="var(--almost-white)"
+            class="collapse-icon"
+            ></Icon>
         </div>
     </div>
-    <div class="steps">
-        <div class="step step-1">
-            <img class="step-img" :src="getImageUrl(steps[0].img)">
-            <p class="desc">{{ steps[0].desc }}</p>
-        </div>
-        <div class="step step-2">
-            <img class="step-img" :src="getImageUrl(steps[1].img)">
-            <p class="desc">{{steps[1].desc}}</p>
-        </div>
-        <div class="step step-3">
-            <img class="step-img" :src="getImageUrl(steps[2].img)">
-            <p class="desc">{{steps[2].desc}}</p>
-        </div>
-    </div>
-</div>
+</section>
 </template>
 
 <style scoped>
@@ -48,12 +52,17 @@ const steps = project.steps;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    align-self: flex-start;
+    width: 100%;
+    padding: 0 20px;
+    /* align-self: flex-start; */
+    /* width: 80%; */
 }
 
 .project-titles p{
     font-size: 28px;
     font-weight: 300;
+    width: 95%;
+    align-self: center;
 }
 
 .main-title{
@@ -63,7 +72,7 @@ const steps = project.steps;
 
 .sub-title{
     color: var(--almost-white);
-    margin-left: 40px;
+    /* margin-left: 40px; */
 }
 
 .main-images{
@@ -96,27 +105,48 @@ const steps = project.steps;
     font-size: 20px;
     color: var(--almost-white);
     font-weight: 300;
+    /* padding: 10px; */
 }
 
-.steps{
-    align-self: flex-start;
+
+.section-collapsible{
+    width: 100%;
+    position: relative;
+    min-height: 40px;
+    overflow: hidden;
+}
+
+.collapse-controls{
+    position: absolute;
+    /* right: 20px; */
+    /* left: 20px; */
+    top: 0px;
+    background-color: var(--purp-dark-05);
+    /* width: 100%; */
+    /* opacity: 0.5; */
+}
+
+.collapse-icon{
+    font-size: 36px;
+}
+
+.section-closed{
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
+    gap: 10px;
+    /* width: 100%; */
 }
 
-.step{
-    display: flex;
-    gap: 20px;
-    align-items: center;
+.slide-fade-enter-active {
+  transition: all 0.4s ease-out;
 }
 
-.step-2{
-    margin-left: 40px;
+.slide-fade-leave-active {
+  transition: all 0.3s cubic-bezier(1, 0.8, 0.5, 1);
 }
 
-.step-3{
-    margin-left: 80px;
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateY(-60px);
+  opacity: 0;
 }
 </style>

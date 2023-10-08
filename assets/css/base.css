@@ -16,6 +16,7 @@ body{
 
 :root{
     --purp-dark: #10002B;
+    --purp-dark-05: #10002B88;
     --purp-deep: #240046;
     --purp-deep-05: #24004688;
     --purp-deep-02: #24004633;
@@ -36,7 +37,7 @@ body{
 }
 
 .section-title{
-    font-size: 28px;
+    font-size: 32px;
     color: var(--almost-white);
     font-weight: 300;
 }

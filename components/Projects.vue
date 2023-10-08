@@ -1,25 +1,46 @@
 <script setup>
 const cards = [
     {
-        img: "Home1.png",
-        desc: "Fully functional account-based blog composed of a Vue frontend and a Django REST backend"
+        name: "Kalopsia Effects / Django/Vue e-commerce store",
+        img: "Sklep/page1.PNG",
+        desc: "Guitar effect store with users, carts, detailed product pages, \
+        reviews, a newsletter system and Stripe payment integration.",
+        tech: "Django with with a Django Rest Framework API serving static Vue files \
+        with webpack, utilizing Stripe for payments, Trello Sendgrid for newsletters, Postgresql \
+        as a database service and Amazon S3 for media file hosting",
+        live: ["https://django-vue-sklep.onrender.com/",],
+        git: ["https://github.com/Kakackle/django_vue_sklep",],
     },
     {
-        img: "jutub1.png",
-        desc: ""
+        name: "The Blog / Django/Vue blog app",
+        img: "Blog/Home.PNG",
+        desc: "Account-based blog with multi-image markdown post creation, tag definitons, \
+        comments with replies, including sorting and filterign by data-based criteria.",
+        tech: "Vue frontend consuming a Django backend API, with OpenAI documentation, pagination, query filtering, \
+        user following and post liking systems",
+        live: ["https://vue-blog-front.netlify.app/", "https://web-production-4c6b.up.railway.app/api/posts/"],
+        git: ["https://github.com/Kakackle/vue_blog","https://github.com/Kakackle/django_blog"],
     },
     {
-        img: "sklep1.png",
-        desc: ""
+        name: "Totally not Instagram / Django",
+        img: "Insta/Home.PNG",
+        desc: "Instagram clone with infinite scroll, account, follow, like, comment and post filter functionalities",
+        tech: "Fully Django-based, with file hosting on Amazon S3, Booststrap django forms and HTMX for in-place form refreshing",
+        live: ["https://django-insta.onrender.com",],
+        git: ["https://github.com/Kakackle/django_insta",],
     },
     {
-        img: "",
-        desc: ""
+        name: "Forum for your thoughts / Django",
+        img: "Forum/Post.PNG",
+        desc: "Account-based forum with posts withing threads within topic-based boards, dockerized with a Postgresql \
+        database, Unittes tand Pytest coverage, bootstrap styling,",
+        tech: "Django, Docker, Pytest, Flake8",
+        live: ["Not yet!",],
+        git: ["https://github.com/Kakackle/django_forum",],
     },
     {
-        img: "",
-        desc: "...and more to come!"
-    },
+        img:"",
+    }
 ]
 </script>
 
@@ -27,8 +48,7 @@ const cards = [
 <section class="projects-section">
     <p class="section-title">Most <span class="title-important">important</span> projects:</p>
     <div class="project-cards">
-        <ProjectCard v-for="(card, index) in cards" :card_img="card.img"
-        :card_desc="card.desc"></ProjectCard>
+            <ProjectCard v-for="(card, index) in cards" :card="card"></ProjectCard>
     </div>
 </section>
 </template>
@@ -44,10 +64,20 @@ const cards = [
 }
 
 .project-cards{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 350px);
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fit, 650px); */
+    /* grid-template-columns: repeat(2, 1fr); */
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: center;
-    row-gap: 20px;
+    /* row-gap: 20px; */
+    gap: 30px;
 }
+/* .project-cards{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+} */
 </style>

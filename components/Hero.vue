@@ -5,13 +5,13 @@
     <section class="hero-section">
         <!-- <div class="left">
             <img class="hero-blob" src="../assets/img/hero_blob.svg">
-            <img class="user-img" src="../assets/img/example_user.png">
         </div> -->
-        <div class="right">
+        <div class="main-div">
             <div class="name-div">
                 <div class="name-top">
                     <p class="name-1">MACIEJ</p>
-                    <p class="name-2"><Icon name="uil:github" color="var(--almost-white)" />/kakackle</p>
+                    <a class="name-2" href="https://github.com/Kakackle"
+                    ><Icon name="uil:github" color="var(--almost-white)" />/kakackle</a>
                 </div>
                 <p class="name-3">MARKOWSKI</p>
             </div>
@@ -31,27 +31,19 @@
                 <img class="skill-img" src="../assets/img/skills/tailwind1.png">
                 <img class="skill-img" src="../assets/img/skills/sass1.png">
             </div>
-            <p>Currently working on:</p>
-            <div>
-                <img class="skill-img" src="../assets/img/skills/fastapi.png">
-                <img class="skill-img" src="../assets/img/skills/aws1.png">
-                <img class="skill-img" src="../assets/img/skills/react.png">
-
+            <div class="skills-titled">
+                <p class="bio">+ Currently working on:</p>
+                <div class="skills skills-working">
+                    <img class="skill-img" src="../assets/img/skills/fastapi.png">
+                    <img class="skill-img" src="../assets/img/skills/aws1.png">
+                    <img class="skill-img" src="../assets/img/skills/react.png">
+                </div>
             </div>
         </div>
     </section>
 </template>
 
 <style scoped>
-/* .hero-section{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 600px);
-    column-gap: 80px;
-    width: 100%;
-    max-width: var(--max-page-width);
-    justify-content: center;
-} */
-
 .hero-section{
     display: flex;
     max-width: var(--max-page-width);
@@ -59,39 +51,13 @@
     padding: 40px;
 }
 
-.left{
-    /* width: 100%; */
-    height: 600px;
-    max-width: 600px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    /* justify-self: center; */
-    /* align-self: center; */
-}
-
-.left img{
-    position: absolute;
-}
-
-.hero-blob{
-    width: 120%;
-}
-
-.user-img{
-    width: 80%;
-}
-
-.right{
+.main-div{
     width: 100%;
     display: flex;
     flex-direction: column;
     flex-shrink: 1;
     gap: 20px;
     letter-spacing: 0.5px;
-    /* align-self: center; */
 }
 
 .name-div{
@@ -100,7 +66,7 @@
 }
 
 .name-1, .name-3{
-    font-size: 72px;
+    font-size: 80px;
     color: var(--purp-deep);
     /* font-stretch: expanded; */
     font-weight: 600;
@@ -110,8 +76,8 @@
     -webkit-text-stroke: 3px var(--purp);
     /* text-stroke: 2px var(--purp); */
     margin: 0;
-    /* line-height: -1px; */
-    height: 64px;
+    /* line-height: -6px; */
+    height: 72px;
 }
 
 .name-top{
@@ -129,21 +95,35 @@
 .name-2{
     font-size: 28px;
     height: 20px;
+    text-decoration: none;
 }
 
 .skills{
     display: grid;
-    gap: 10px;
+    /* gap: 10px; */
+    column-gap: 20px;
+    row-gap: 20px;
     /* grid-template-columns: repeat(5, 1fr); */
     /* grid-template-rows: repeat(2, 1fr); */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-items: center;
-    max-width: 600px;
+    /* max-width: 600px; */
     align-self: center;
-    background-color: var(--purp-deep);
+    /* background-color: var(--purp-deep); */
+    background-color: var(--purp-dark-05);
     padding: 20px;
+}
+
+.skills-working{
+    align-self: flex-start;
+}
+
+.skills-titled{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .skill-img{
@@ -155,29 +135,4 @@
     background-color: var(--almost-white);
 }
 
-.htmlcssjs{
-    position:relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 70px;
-    width: 70px;
-    /* align-self: center; */
-    /* justify-self: center; */
-}
-
-.css, .js, .html{
-    position:absolute;
-}
-
-.html{
-    right: -10px;
-}
-.js{
-    left: -10px;
-}
-
-.css{
-    bottom: -10px;
-}
 </style>

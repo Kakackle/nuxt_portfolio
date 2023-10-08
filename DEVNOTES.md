@@ -12,7 +12,6 @@ tzn. w tym wypadku przekazywanie tylko nazwy pliku oraz stalej sciezki, ale gene
 
 do zobaczenia np. w ProjectCard.vue
 
-# FIXME: o co chodzi: czasem obrazki sie laduja przez to URL, a czasem nie - nie zwraca bledu, tylko po prostu ich nie ma stronie
 
 # Background pattern generators
 https://heropatterns.com/
