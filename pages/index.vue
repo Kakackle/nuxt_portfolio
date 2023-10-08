@@ -2,6 +2,8 @@
 // import 'assets/css/extra.css';
 const projects_show = ref(1);
 const indepth_show = ref(1);
+
+// aside section nav
 const headers = [
     "Home",
     "Projects",
@@ -27,7 +29,14 @@ onMounted(() => {
     document.querySelectorAll('.header').forEach((section)=>{
         observer.observe(section);
     })
-}) 
+})
+
+// mouse light
+// let pos = document.documentElement;
+// pos.addEventListener('mousemove', e=>{
+//     pos.style.setProperty('--x', e.clientX + 'px');
+//     pos.style.setProperty('--y', e.clientY + 'px');
+// })
 
 </script>
 
@@ -35,6 +44,8 @@ onMounted(() => {
 <main class="main-with-aside">
     <main class="index-main">
         <Hero class="hero header" id="Home"></Hero>
+        <a class="shiny">SHINY BUTTON</a>
+        <div class="light"></div>
         <section class="section-collapsible section-margin">
             <!-- section with transition -->
             <Transition name="slide-fade">
@@ -160,5 +171,54 @@ onMounted(() => {
   transform: translateY(-60px);
   opacity: 0;
 }
+
+/* shiny button */
+.shiny{
+    margin: auto;
+    text-decoration: none;
+    color: var(--almost-white);
+    /* border: none; */
+    font-size: 24px;
+    padding: 16px 46px;
+    position: relative;
+    border: 1px solid var(--purp-soft-05);
+    overflow: hidden;
+}
+
+.shiny:hover{
+    /* box-shadow */
+    cursor: pointer;
+}
+
+.shiny::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        var(--purp-soft-05),
+        transparent
+    );
+    transition: all 0.6s;
+}
+
+a:hover::before{
+    left: 100%;
+}
+
+/* .light
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: radial-gradient(circle at var(--x) var(--y), transparent 5%, var(--purp-deep-02) 10%);
+} */
 
 </style>

@@ -22,7 +22,7 @@
                 <img class="skill-img" src="../assets/img/skills/django1.png">
                 <img class="skill-img drf" src="../assets/img/skills/drf1.png">
                 <img class="skill-img" src="../assets/img/skills/python1.png">
-                <img class="skill-img" src="../assets/img/skills/pytest.png">
+                <img class="skill-img" src="../assets/img/skills/Pytest.png">
                 <img class="skill-img" src="../assets/img/skills/opencv.png">
                 <img class="skill-img" src="../assets/img/skills/git.png">
                 <img class="skill-img" src="../assets/img/skills/docker1.png">
