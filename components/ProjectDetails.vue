@@ -2,7 +2,7 @@
 const props = defineProps(['project']);
 const project = props.project;
 const main_features = project.main_features;
-console.log(`main_features: ${JSON.stringify(main_features)}`);
+// console.log(`main_features: ${JSON.stringify(main_features)}`);
 const steps = project.steps;
 </script>
 

@@ -21,8 +21,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60px;
+    height: 50px;
     /* background-color: var(--purp-deep); */
+    /* filter: opacity(0.5); */
+    background-color: var(--purp-deep-02);
+    backdrop-filter: blur(2px);
+    position: sticky;
+    top: 0px;
+    z-index: 99;
 }
 .nav-div{
     width: 100%;
@@ -65,7 +71,7 @@ a.nuxt-link-exact-active {
 .logo{
     font-weight: 500px;
     font-size: 28px;
-    padding: 2px 40px;
+    padding: 0px 40px;
     border: 2px solid var(--almost-white);
 }
 

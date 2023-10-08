@@ -3,10 +3,10 @@
 
 <template>
     <section class="hero-section">
-        <div class="left">
+        <!-- <div class="left">
             <img class="hero-blob" src="../assets/img/hero_blob.svg">
             <img class="user-img" src="../assets/img/example_user.png">
-        </div>
+        </div> -->
         <div class="right">
             <div class="name-div">
                 <div class="name-top">
@@ -15,35 +15,48 @@
                 </div>
                 <p class="name-3">MARKOWSKI</p>
             </div>
-            <p class="bio">Web dev, engineer, persistent learner, self-called musician, creative extraordinaire, Automation Engineer by trade. Łódź lover</p>
+            <p class="bio">Full-stack web dev, proficient in Django and Vue, interested in all things Python. Automation and Robot Control MSc., persistent learner, self-called musician, Łódź lover.</p>
             <div class="skills">
-                <div class="htmlcssjs">
-                    <img class="css" src="../assets/img/skills/css1.png">
-                    <img class="html" src="../assets/img/skills/html1.png">
-                    <img class="js" src="../assets/img/skills/js1.png">
-                </div>
+                <img class="skill-img" src="../assets/img/skills/htmlcssjs.png">
                 <img class="skill-img" src="../assets/img/skills/vue1.png">
                 <img class="skill-img" src="../assets/img/skills/django1.png">
-                <img class="skill-img" src="../assets/img/skills/drf1.png">
+                <img class="skill-img drf" src="../assets/img/skills/drf1.png">
                 <img class="skill-img" src="../assets/img/skills/python1.png">
-                <img class="skill-img" src="../assets/img/skills/aws1.png">
+                <img class="skill-img" src="../assets/img/skills/pytest.png">
+                <img class="skill-img" src="../assets/img/skills/opencv.png">
+                <img class="skill-img" src="../assets/img/skills/git.png">
                 <img class="skill-img" src="../assets/img/skills/docker1.png">
+                <img class="skill-img" src="../assets/img/skills/postgresql.png">
                 <img class="skill-img" src="../assets/img/skills/figma1.png">
                 <img class="skill-img" src="../assets/img/skills/tailwind1.png">
                 <img class="skill-img" src="../assets/img/skills/sass1.png">
+            </div>
+            <p>Currently working on:</p>
+            <div>
+                <img class="skill-img" src="../assets/img/skills/fastapi.png">
+                <img class="skill-img" src="../assets/img/skills/aws1.png">
+                <img class="skill-img" src="../assets/img/skills/react.png">
+
             </div>
         </div>
     </section>
 </template>
 
 <style scoped>
-.hero-section{
+/* .hero-section{
     display: grid;
     grid-template-columns: repeat(auto-fit, 600px);
     column-gap: 80px;
     width: 100%;
     max-width: var(--max-page-width);
     justify-content: center;
+} */
+
+.hero-section{
+    display: flex;
+    max-width: var(--max-page-width);
+    width: 100%;
+    padding: 40px;
 }
 
 .left{
@@ -71,22 +84,19 @@
     width: 80%;
 }
 
-/* FIXME: */
 .right{
     width: 100%;
     display: flex;
     flex-direction: column;
     flex-shrink: 1;
     gap: 20px;
-    align-self: center;
+    letter-spacing: 0.5px;
+    /* align-self: center; */
 }
 
 .name-div{
     display: flex;
     flex-direction: column;
-    /* line-height: -4px; */
-    /* background-color: var(--purp-deep);
-    padding: 10px; */
 }
 
 .name-1, .name-3{
@@ -130,12 +140,19 @@
     flex-wrap: wrap;
     align-items: center;
     justify-items: center;
-    /* height: 140px; */
-    max-width: 550px;
+    max-width: 600px;
+    align-self: center;
+    background-color: var(--purp-deep);
+    padding: 20px;
 }
 
 .skill-img{
     align-self: center;
+    max-height: 80px;
+}
+
+.drf{
+    background-color: var(--almost-white);
 }
 
 .htmlcssjs{
