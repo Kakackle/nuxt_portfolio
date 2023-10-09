@@ -13,3 +13,6 @@ TODO: przenoszenie / scrollowanie do naglowkow na stronie i do tego hover itd
 TODO: moze nie potrzebujesz image from url? i dloby rade odpowiednio z folderu public? moze
 
 TODO: skills na grid i DRF zajmuje dwie kratki a reszta jedna? idk, maybe
+
+
+TODO: https://www.youtube.com/watch?v=kySGqoU7X-s - blur czemu nie wchodzi ruchomy

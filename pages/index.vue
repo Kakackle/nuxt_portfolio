@@ -29,6 +29,17 @@ onMounted(() => {
     document.querySelectorAll('.header').forEach((section)=>{
         observer.observe(section);
     })
+    const blob = document.getElementById("blob");
+
+        window.onpointermove = event => { 
+        const { clientX, clientY } = event;
+        
+        blob.animate({
+            left: `${clientX}px`,
+            top: `${clientY}px`
+        }, { duration: 3000, fill: "forwards" });
+        }
+
 })
 
 // mouse light
@@ -38,6 +49,10 @@ onMounted(() => {
 //     pos.style.setProperty('--y', e.clientY + 'px');
 // })
 
+
+
+
+
 </script>
 
 <template>
@@ -45,7 +60,6 @@ onMounted(() => {
     <main class="index-main">
         <Hero class="hero header" id="Home"></Hero>
         <a class="shiny">SHINY BUTTON</a>
-        <div class="light"></div>
         <section class="section-collapsible section-margin">
             <!-- section with transition -->
             <Transition name="slide-fade">
@@ -92,6 +106,8 @@ onMounted(() => {
             </a>
         </div>
     </aside>
+    <div id="blob"></div>
+    <!-- <div id="blur"></div> -->
 </main>
 </template>
 
@@ -220,5 +236,43 @@ a:hover::before{
     pointer-events: none;
     background: radial-gradient(circle at var(--x) var(--y), transparent 5%, var(--purp-deep-02) 10%);
 } */
+
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+  
+  50% {
+    scale: 1 1.5;
+  }
+  
+  to {
+    rotate: 360deg;
+  }
+}
+
+#blob {
+  background-color: white;
+  height: 34vmax;
+  aspect-ratio: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: linear-gradient(to right, aquamarine, mediumpurple);
+  animation: rotate 20s infinite;
+  opacity: 0.8;
+  backdrop-filter: blur(12vmax);
+  z-index: -5;
+}
+
+#blur {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -4;
+  backdrop-filter: blur(12vmax);
+}
 
 </style>
