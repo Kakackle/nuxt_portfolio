@@ -6,11 +6,11 @@
         <div class="nav-div">
             <a ref="#" class="logo">LOGO</a>
             <ul class="nav-links">
-                <li class="link"><NuxtLink to="/">Home</NuxtLink></li>
-                <li class="link"><NuxtLink to="/about">About</NuxtLink></li>
-                <li class="link"><NuxtLink to="/projects">Projects</NuxtLink></li>
-                <li class="link"><NuxtLink to="/other">Other</NuxtLink></li>
-                <li class="link"><NuxtLink to="/projects/blog">Blog</NuxtLink></li>
+                <li class="link"><NuxtLink class="link" to="/">Home</NuxtLink></li>
+                <li class="link"><NuxtLink class="link" to="/about">About</NuxtLink></li>
+                <li class="link"><NuxtLink class="link" to="/projects">Projects</NuxtLink></li>
+                <!-- <li class="link"><NuxtLink to="/other">Other</NuxtLink></li> -->
+                <!-- <li class="link"><NuxtLink to="/projects/blog">Blog</NuxtLink></li> -->
             </ul>
         </div>
     </nav>
@@ -42,6 +42,8 @@
     display: flex;
     align-items: center;
     gap: 20px;
+    /* text-decoration: none; */
+    list-style: none;
 }
 
 .logo, .link{
@@ -51,23 +53,19 @@
     list-style: none;
 }
 
-.link a{
-    color: inherit;
-    font-size: 24px;
+.link:hover{
+    transform: scale(1.05);
 }
 
-.link a:link, .link a:visited{
-    text-decoration: none;
+/* .router-link-active{
+    color: var(--purp-soft);
+} */
+
+.link.router-link-active{
+    color: var(--purp-soft);
 }
-/* TODO: ehhh, juz nie dziala stylizacja aktywnego linku */
-/* home route and active route will show in bold as it matches / and /about */
-a.nuxt-link-active {
-  font-weight: bold;
-}
-/* exact link will show the primary color for only the exact matching link */
-a.nuxt-link-exact-active {
-  color: #00c58e;
-}
+
+
 .logo{
     font-weight: 500px;
     font-size: 28px;

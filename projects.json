@@ -1,82 +1,86 @@
 [
     {
         "id": "Kalopsia",
-        "title":"Django backend serving Vue frontend files on same domain through webpack",
+        "title":"Kalopsia / E-commerce / Two frameworks on one domain",
         "main_features":[
            {
               "img":"Sklep/Home.PNG",
-              "desc":"Front-facing home view with product previews, a changing banner, a 3D model viewer, functional newsletter signup"
+              "desc":"Front-facing home view with product previews, a dynamic banner, a 3D model viewer and a functional newsletter sign-up form"
            },
            {
               "img": "Sklep/page1.PNG",
-              "desc": "Store grid"
+              "desc": "Main store grid, with filtering and sorting options based on categories and object properties, paginated, with links to add to card or to favourites"
            },
            {
               "img":"Sklep/page2.PNG",
-              "desc":"Product view with reviews, desc tabs etc"
+              "desc":"Product view with a photo wheel, a magnifier, product detail tabs, a review section and ordering options"
            },
            {
               "img":"Sklep/page3.PNG",
-              "desc":"Cart convertible into orders with addresses, discounts etc"
+              "desc":"Cart view easily convertible into orders with saved addresses, discounts codes, shipping options"
            }
         ],
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non arcu risus quis varius. In ante metus dictum at tempor. Mattis pellentesque id nibh tortor id aliquet. Non odio euismod lacinia at quis risus sed vulputate. Facilisis volutpat est velit egestas dui id ornare arcu. Quis ipsum suspendisse ultrices gravida dictum fusce."
+        "desc": "The project serves as an example of a fledged out fullstack application utilizing a backend (Django) and a frontend (Vue) framework, including complex model relations, using a Postgresql database, capable of utilizing external services such as Stripe or SendGrid. Also utilizing full capacities of a Django-based application with session based auth, a built-in account system, database model-based forms etc, while being able to work with a dynamic frontend framework like Vue, speeding up front-end developemnt and allowing for the use of the component and reference system features."
      },
      {
         "id": "Blog",
-        "title":"Vue frontend multi-user Blog with a Django Rest API",
+        "title":"Blog App / Separate frontend and backend",
         "main_features":[
            {
               "img":"Blog/Home.PNG",
-              "desc":"Paginated posts view with sorting and filtering by multiple data-based metrics"
+              "desc":"Paginated posts view with sorting and filtering by multiple data-based metrics, including likes, by followed users, date"
            },
            {
               "img":"Blog/Post.PNG",
-              "desc":"Post view with markdown display, comments"
+              "desc":"Post view with markdown-based display, a comments section, in-post images, links to tag definitions etc"
            },
            {
+            "img":"Blog/post_create_cut.PNG",
+            "desc":"Post creation with a custom markdown editor and post preview, including multiple images uploading"
+            },
+           {
               "img":"Blog/api.PNG",
-              "desc":"API backend with openapi schema, ..."
+              "desc":"API-based backend with an openapi schema (mostly) conforming to REST rules"
            }
         ],
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non arcu risus quis varius. In ante metus dictum at tempor. Mattis pellentesque id nibh tortor id aliquet. Non odio euismod lacinia at quis risus sed vulputate. Facilisis volutpat est velit egestas dui id ornare arcu. Quis ipsum suspendisse ultrices gravida dictum fusce."
+        "desc": "The app is a combination of a separate frontend built in Vue and a REST-style API backend built in Django. Allows for user creation, user following, post creation, editing and liking, commenting on posts and all related CRUD operations, whilst offering a slick, modern SPA-based interface, providing a separation of concerns for ease of development"
      },
     {
        "id": "Insta",
-       "title":"Django Instagram clone (with HTMX)",
+       "title":"Insta / Django Instagram clone (with HTMX)",
        "main_features":[
           {
              "img":"Insta/Home.PNG",
-             "desc":"Infinite scroll post page with comments section previews, post liking, filtering by followed users etc"
+             "desc":"Infinite scroll-based page with posts with comments section previews, post liking and filtering by followed users"
           },
           {
              "img":"Insta/Grid.PNG",
-             "desc":"User profiles with followers, created posts, editing, authorization"
+             "desc":"Post grid filterable by tags, description, followed users, liekd posts and more"
           },
           {
              "img":"Insta/signup_form.PNG",
-             "desc":"..."
+             "desc":"Utilization of built-in Django features such as session-based authentication, database models forms and validation"
           }
        ],
-       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non arcu risus quis varius. In ante metus dictum at tempor. Mattis pellentesque id nibh tortor id aliquet. Non odio euismod lacinia at quis risus sed vulputate. Facilisis volutpat est velit egestas dui id ornare arcu. Quis ipsum suspendisse ultrices gravida dictum fusce."
+       "desc": "A Django-based fullstack application based on accounts and model relations, utilizing model forms, authentication, filtering backends etc, to showcase Django as a fully capable fullstack framework, with the additonal usage of HTMX to enable form submission that refreshes only a part of a website with the newest database state for a smoother user experience"
     },
     {
         "id": "Forum",
-        "title":"Django Forum with Docker etc",
+        "title":"A Django Forum app with a modern development workflow",
         "main_features":[
            {
               "img":"Forum/Topic.PNG",
-              "desc":"Infinite scroll post page with comments section previews, post liking, filtering by followed users etc"
-           },
-           {
-              "img":"Forum/Post.PNG",
-              "desc":"User profiles with followers, created posts, editing, authorization"
+              "desc":"An account-based forum website with posts within topics within threads"
            },
            {
               "img":"Forum/markdown.PNG",
-              "desc":"..."
+              "desc":"Topic-reply based, with user reputation and a built-in markdown editor"
+           },
+           {
+              "img":"Forum/github_actions.PNG",
+              "desc":"Implementation of Github actions, a test coverage, dockerizing"
            }
         ],
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non arcu risus quis varius. In ante metus dictum at tempor. Mattis pellentesque id nibh tortor id aliquet. Non odio euismod lacinia at quis risus sed vulputate. Facilisis volutpat est velit egestas dui id ornare arcu. Quis ipsum suspendisse ultrices gravida dictum fusce."
+        "desc": "The project in it's simplicity allows for easy implementation and testing of various modern development techniques such as composing the website service with a Postgresql database service, utilizing various testing techniques such as Pytest, styling with Flake8 and others"
      }
 ]

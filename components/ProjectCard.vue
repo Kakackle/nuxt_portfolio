@@ -72,7 +72,7 @@ const img_path = base_path + card.img;
 .card{
     display: flex;
     gap: 20px;
-    max-width: 680px;
+    max-width: 670px;
     width: 100%;
 }
 
@@ -96,6 +96,45 @@ const img_path = base_path + card.img;
     /* width: 100%; */
     /* height: 100%; */
     flex-shrink: 0;
+
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+
+.img-div::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        var(--purp-soft-05),
+        transparent
+    );
+    
+}
+
+.img-div:hover::before{
+    left: 100%;
+    transition: all 0.6s;
+}
+
+.img-div:hover{
+    /* transform: scale(1.02); */
+    transition: all 0.3s;
+}
+
+.card-img{
+    z-index: 1;
+}
+
+.live:hover, .git:hover{
+    transform: scale(1.1);
+    transition: all 0.1s;
 }
 
 @media (max-width: 760px)
@@ -123,6 +162,7 @@ const img_path = base_path + card.img;
     padding: 10px;
     text-wrap: wrap;
     width: 100%;
+    /* flex-shrink: 1; */
 }
 
 .built{

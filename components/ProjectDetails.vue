@@ -77,15 +77,19 @@ const project_show = ref(1);
 
 .main-images{
     display: flex;
-    gap: 20px;
+    gap: 30px;
+    /* row-gap: 30px; */
     flex-wrap: wrap;
+    /* padding: 0 20px; */
+    padding-left: 20px;;
+    width: 100%;
 }
 
 .main-img, .step-img{
     background-color: var(--purp-dark);
     width: 300px;
-    height: 400px;
-    object-fit: contain;
+    height: 420px;
+    /* object-fit: contain; */
 }
 
 .step-img{
@@ -105,6 +109,7 @@ const project_show = ref(1);
     font-size: 20px;
     color: var(--almost-white);
     font-weight: 300;
+    padding-left: 10px;
     /* padding: 10px; */
 }
 

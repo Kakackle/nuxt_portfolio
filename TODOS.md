@@ -15,4 +15,4 @@ TODO: moze nie potrzebujesz image from url? i dloby rade odpowiednio z folderu p
 TODO: skills na grid i DRF zajmuje dwie kratki a reszta jedna? idk, maybe
 
 
-TODO: https://www.youtube.com/watch?v=kySGqoU7X-s - blur czemu nie wchodzi ruchomy
+https://www.youtube.com/watch?v=kySGqoU7X-s

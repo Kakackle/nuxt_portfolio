@@ -92,11 +92,8 @@ onMounted(() => {
                 </div>
             </div>
         </section>
-        <section class="this-project">
-            <p class="section-title">This project</p>
-            <p class="desc">Built using Nuxt, a server-side rendered framework based on Vue, utitlizing various styling techniques such as an intersection observer, css animations and GSAP - a javascript animation library. Built for speed etc</p>
-        </section>
-        <!-- <ProjectsOther class="section-margin"></ProjectsOther> -->
+        
+        <ProjectsOther class="section-margin"></ProjectsOther>
     </main>
     <aside class="aside">
         <div>
@@ -247,22 +244,6 @@ onMounted(() => {
   position: absolute;
   z-index: -4;
   backdrop-filter: blur(12vmax);
-}
-
-.this-project{
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: var(--max-page-padding);
-    gap: 20px;
-}
-
-.desc{
-    font-size: 20px;
-    color: var(--almost-white);
-    align-self: flex-start;
 }
 
 </style>

@@ -3,14 +3,17 @@
 
 <template>
     <section class="hero-section">
-        <!-- <div class="left">
-            <img class="hero-blob" src="../assets/img/hero_blob.svg">
-        </div> -->
         <div class="main-div">
+            <div class="languages">
+                <NuxtLink class="shiny" to="/">
+                    <span class="lang">ENG</span><Icon name="flagpack:gb-ukm"></Icon></NuxtLink>
+                <NuxtLink class="shiny" to="/pl">
+                    <span class="lang">PL</span><Icon name="flagpack:pl"></Icon></NuxtLink>
+            </div>
             <div class="name-div">
                 <div class="name-top">
                     <p class="name-1">MACIEJ</p>
-                    <a class="name-2" href="https://github.com/Kakackle"
+                    <a class="name-2" href="https://github.com/Kakackle" target="_blank"
                     ><Icon name="uil:github" color="var(--almost-white)" />/kakackle</a>
                 </div>
                 <p class="name-3">MARKOWSKI</p>
@@ -20,6 +23,7 @@
                 <img class="skill-img" src="../assets/img/skills/htmlcssjs.png">
                 <img class="skill-img" src="../assets/img/skills/vue1.png">
                 <img class="skill-img" src="../assets/img/skills/django1.png">
+                <img class="skill-img" src="../assets/img/skills/nuxt.png">
                 <img class="skill-img drf" src="../assets/img/skills/drf1.png">
                 <img class="skill-img" src="../assets/img/skills/python1.png">
                 <img class="skill-img" src="../assets/img/skills/Pytest.png">
@@ -114,6 +118,7 @@
     /* background-color: var(--purp-deep); */
     background-color: var(--purp-dark-05);
     padding: 20px;
+    width: 100%;
 }
 
 .skills-working{
@@ -133,6 +138,58 @@
 
 .drf{
     background-color: var(--almost-white);
+}
+
+.languages{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* shiny button */
+.shiny{
+    text-decoration: none;
+    color: var(--almost-white);
+    font-size: 24px;
+    padding: 16px 40px;
+    position: relative;
+    border: 1px solid var(--purp-soft-05);
+    border-radius: 30px;
+    overflow: hidden;
+
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.shiny:hover{
+    /* box-shadow */
+    cursor: pointer;
+}
+
+.shiny::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        var(--purp-soft-05),
+        transparent
+    );
+    
+}
+
+.shiny:hover::before{
+    left: 100%;
+    transition: all 0.6s;
 }
 
 </style>
