@@ -2,7 +2,10 @@
 </script>
 
 <template>
-    <h1 class="base1">About page here</h1>
+    <section class="about-section">
+    <AboutHero></AboutHero>
+    <AboutDesc></AboutDesc>
+    </section>
 </template>
 
 <style scoped>
