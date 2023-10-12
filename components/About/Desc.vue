@@ -27,14 +27,14 @@
                 <figcaption class="project-caption">The mechanical system</figcaption>
             </figure>
             <figure class="project-figure">
-                <img class="project-image" src="../../assets//img//about//dzialajacy_program_1.PNG">
+                <img class="project-image" src="../../assets//img//about//dzialajacy_program_1.png">
                 <figcaption class="project-caption">The Rubik solving program</figcaption>
             </figure>
         </div>
         <p class="desc">For my Master's thesis I printed and constructed a semi-realistic robotic model of a human forearm and hand, controlled by the movements of the operator's hand through a Websocket server hosted on a ESP32 system, with the addition of a controllable simulation of the hand's movement built in Unity with C# with Google Cardboard VR support and a printed headset, including a lengthy discussion of the state of the art solutions and underlying problems spanning over 100 references and citations</p>
         <div class="project-images">
             <figure class="project-figure">
-                <img class="project-image" src="../../assets//img//about/stanowisko_biceps.PNG">
+                <img class="project-image" src="../../assets//img//about/stanowisko_biceps.png">
                 <figcaption class="project-caption">The mechanical arm</figcaption>
             </figure>
             <figure class="project-figure">
@@ -42,22 +42,22 @@
                 <figcaption class="project-caption">The simulation</figcaption>
             </figure>
             <figure class="project-figure">
-                <img class="project-image" src="../../assets//img//about/rekawica_powerbank.PNG">
+                <img class="project-image" src="../../assets//img//about/rekawica_powerbank.png">
                 <figcaption class="project-caption">The control glove</figcaption>
             </figure>
         </div>
         <p class="desc">Some more notable study projects include a system for the estimation of the 3D position of an object of known size with the use of one camera, realized with OpenCV through Zhang's method, a guitar effect with a LTSpice simulation and an attempt of mapping and localizing users within a faculty building through BLE acces point triangulation</p>
         <div class="project-images">
             <figure class="project-figure">
-                <img class="project-image" src="../../assets//img//about/zhang.PNG">
+                <img class="project-image" src="../../assets//img//about/zhang.png">
                 <figcaption class="project-caption">3D position estimation</figcaption>
             </figure>
             <figure class="project-figure">
-                <img class="project-image" src="../../assets//img//about/efekt_schemat.PNG">
+                <img class="project-image" src="../../assets//img//about/efekt_schemat.png">
                 <figcaption class="project-caption">Guitar effect schema</figcaption>
             </figure>
             <figure class="project-figure">
-                <img class="project-image" src="../../assets//img//about/access_points2.PNG">
+                <img class="project-image" src="../../assets//img//about/access_points2.png">
                 <figcaption class="project-caption">Faculty mapping</figcaption>
             </figure>
         </div>
@@ -72,7 +72,7 @@
                 <!-- <figcaption class="project-caption">front</figcaption> -->
             </figure>
             <figure class="project-figure">
-                <img class="project-image-square" src="../../assets//img//about/okladka_tyl.PNG">
+                <img class="project-image-square" src="../../assets//img//about/okladka_tyl.png">
                 <!-- <figcaption class="project-caption">Guitar effect schema</figcaption> -->
             </figure>
         </div>
