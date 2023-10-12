@@ -13,7 +13,7 @@
     </div>
     <div class="project-images">
             <figure class="project-figure">
-                <img class="project-image-large" src="../../assets//img//about//designy.PNG">
+                <img class="project-image-large" src="../../assets//img//about//designy.png">
                 <figcaption class="project-caption">The design process</figcaption>
             </figure>
         </div>

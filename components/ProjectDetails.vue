@@ -2,7 +2,7 @@
 const props = defineProps(['project']);
 const project = props.project;
 const main_features = project.main_features;
-const base_path = "_nuxt/static/img/projects/"
+const base_path = "_nuxt/assets/img/projects/"
 // const img_path = base_path + card.img;
 const project_show = ref(1);
 </script>
