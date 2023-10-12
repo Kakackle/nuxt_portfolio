@@ -13,7 +13,7 @@
     </div>
     <div class="project-images">
             <figure class="project-figure">
-                <img class="project-image-large" src="../../assets//img//about//designy.png">
+                <img class="project-image-large" src="_nuxt/assets//img//about//designy.png">
                 <figcaption class="project-caption">The design process</figcaption>
             </figure>
         </div>
@@ -23,41 +23,41 @@
         <p class="desc">For my Bachelor's thesis I created a mechanical system capable of visually assessing the state of a Rubik's cube, find a solution and solve it itself. The computer vision program was wrriten in C#, connected through UART to and Arduino unit controlling the robot.</p>
         <div class="project-images">
             <figure class="project-figure">
-                <img class="project-image" src="../../assets//img//about//caly_ukl_1.jpg">
+                <img class="project-image" src="_nuxt/assets//img//about//caly_ukl_1.jpg">
                 <figcaption class="project-caption">The mechanical system</figcaption>
             </figure>
             <figure class="project-figure">
-                <img class="project-image" src="../../assets//img//about//dzialajacy_program_1.png">
+                <img class="project-image" src="_nuxt/assets//img//about//dzialajacy_program_1.png">
                 <figcaption class="project-caption">The Rubik solving program</figcaption>
             </figure>
         </div>
         <p class="desc">For my Master's thesis I printed and constructed a semi-realistic robotic model of a human forearm and hand, controlled by the movements of the operator's hand through a Websocket server hosted on a ESP32 system, with the addition of a controllable simulation of the hand's movement built in Unity with C# with Google Cardboard VR support and a printed headset, including a lengthy discussion of the state of the art solutions and underlying problems spanning over 100 references and citations</p>
         <div class="project-images">
             <figure class="project-figure">
-                <img class="project-image" src="../../assets//img//about/stanowisko_biceps.png">
+                <img class="project-image" src="_nuxt/assets//img//about/stanowisko_biceps.png">
                 <figcaption class="project-caption">The mechanical arm</figcaption>
             </figure>
             <figure class="project-figure">
-                <img class="project-image" src="../../assets//img//about/skrin_cardboard.jpg">
+                <img class="project-image" src="_nuxt/assets//img//about/skrin_cardboard.jpg">
                 <figcaption class="project-caption">The simulation</figcaption>
             </figure>
             <figure class="project-figure">
-                <img class="project-image" src="../../assets//img//about/rekawica_powerbank.png">
+                <img class="project-image" src="_nuxt/assets//img//about/rekawica_powerbank.png">
                 <figcaption class="project-caption">The control glove</figcaption>
             </figure>
         </div>
         <p class="desc">Some more notable study projects include a system for the estimation of the 3D position of an object of known size with the use of one camera, realized with OpenCV through Zhang's method, a guitar effect with a LTSpice simulation and an attempt of mapping and localizing users within a faculty building through BLE acces point triangulation</p>
         <div class="project-images">
             <figure class="project-figure">
-                <img class="project-image" src="../../assets//img//about/zhang.png">
+                <img class="project-image" src="_nuxt/assets//img//about/zhang.png">
                 <figcaption class="project-caption">3D position estimation</figcaption>
             </figure>
             <figure class="project-figure">
-                <img class="project-image" src="../../assets//img//about/efekt_schemat.png">
+                <img class="project-image" src="_nuxt/assets//img//about/efekt_schemat.png">
                 <figcaption class="project-caption">Guitar effect schema</figcaption>
             </figure>
             <figure class="project-figure">
-                <img class="project-image" src="../../assets//img//about/access_points2.png">
+                <img class="project-image" src="_nuxt/assets//img//about/access_points2.png">
                 <figcaption class="project-caption">Faculty mapping</figcaption>
             </figure>
         </div>
@@ -68,11 +68,11 @@
         <p class="desc">My biggest passion project so far has been a "release" of a compilation of boombap beats inspired by artists like MF DOOM, NOON, Madlib, Q-Tip and more, which you can listen to for free on youtube: <a class="intermedium" href="https://www.youtube.com/playlist?list=PLc0mBJHoWgQNCvPh6Upf2JAjyQ9yb2Ouh" target="_blank">Intermedium</a></p>
         <div class="project-images">
             <figure class="project-figure">
-                <img class="project-image-square" src="../../assets//img//about/OKLADKA_PROBA_1.png">
+                <img class="project-image-square" src="_nuxt/assets//img//about/OKLADKA_PROBA_1.png">
                 <!-- <figcaption class="project-caption">front</figcaption> -->
             </figure>
             <figure class="project-figure">
-                <img class="project-image-square" src="../../assets//img//about/okladka_tyl.png">
+                <img class="project-image-square" src="_nuxt/assets//img//about/okladka_tyl.png">
                 <!-- <figcaption class="project-caption">Guitar effect schema</figcaption> -->
             </figure>
         </div>
