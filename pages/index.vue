@@ -55,6 +55,7 @@ onMounted(() => {
 </script>
 
 <template>
+<section>
 <main class="main-with-aside">
     <main class="index-main">
         <Hero class="hero header" id="Home"></Hero>
@@ -110,6 +111,8 @@ onMounted(() => {
     <div id="blob"></div>
     <!-- <div id="blur"></div> -->
 </main>
+<ContactForm></ContactForm>
+</section>
 </template>
 
 <style scoped>
@@ -263,6 +266,7 @@ onMounted(() => {
     font-size: 20px;
     color: var(--almost-white);
     align-self: flex-start;
+    font-weight: 300;
 }
 
 </style>
