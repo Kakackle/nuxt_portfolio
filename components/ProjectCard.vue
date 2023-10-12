@@ -7,7 +7,8 @@ const getImageUrl = function(){
     return new URL(`../assets/img/projects/${card_img}`, import.meta.url);
 }
 
-const base_path = "_nuxt/assets/img/projects/"
+// const base_path = "_nuxt/assets/img/projects/";
+const base_path = "/img/projects/";
 const img_path = base_path + card.img;
 
 </script>

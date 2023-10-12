@@ -5,8 +5,10 @@
 <template>
 <main class="hero-main">
     <div class="hero-left">
-        <img class="user-blog" src="_nuxt/assets/img/hero_blob.svg">
-        <img class="user-img" src="_nuxt/assets/img/example_user.png">
+        <!-- <img class="user-blog" src="_nuxt/assets/img/hero_blob.svg">
+        <img class="user-img" src="_nuxt/assets/img/example_user.png"> -->
+        <img class="user-blog" src="/img/hero_blob.svg">
+        <img class="user-img" src="/img/example_user.png">
     </div>
     <div class="hero-right">
         <p class="name">MACIEJ MARKOWSKI</p>
