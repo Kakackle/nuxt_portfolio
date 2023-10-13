@@ -10,9 +10,11 @@ const headers = [
     "Kalopsia",
     "Blog",
     "Insta",
-    "Forum"
+    "Forum",
+    "Contact"
 ]
 
+// setting the header currently intesecting by reading intersecting target id
 const currentHeader = ref("");
 
 onMounted(() => {
@@ -36,11 +38,6 @@ onMounted(() => {
         window.onpointermove = event => { 
         const { clientX, clientY } = event;
 
-        // window.onscroll = scroll_event => {
-        //     clientX = clientX + window.scrollX;
-        //     clientY = clientY + window.scrollY;
-        // }
-
         // blob.animate({
         //     left: `${clientX}px`,
         //     top: `${clientY}px`
@@ -55,7 +52,7 @@ onMounted(() => {
 </script>
 
 <template>
-<section>
+<section class="master">
 <main class="main-with-aside">
     <main class="index-main">
         <Hero class="hero header" id="Home"></Hero>
@@ -102,26 +99,35 @@ onMounted(() => {
     <aside class="aside">
         <div>
             <!-- <p>{{ currentHeader }}</p> -->
-            <a v-for="(header, index) in headers" :key="header" :href="`#${header}`"
+
+            <!-- <a v-for="(header, index) in headers" :key="header" :href="`#${header}`"
             :class="{active: header === currentHeader}">
             {{ header }}
-            </a>
+            </a> -->
+
+            <NuxtLink v-for="(header, index) in headers" :key="header" :to="`#${header}`"
+            :class="{active: header === currentHeader}">
+            {{ header }}
+            </NuxtLink>
         </div>
     </aside>
     <div id="blob"></div>
     <!-- <div id="blur"></div> -->
 </main>
-<ContactForm></ContactForm>
+<ContactForm id="Contact" class="contact"></ContactForm>
 </section>
 </template>
 
 <style scoped>
+/* .master{
+    width: 100%;
+} */
 .main-with-aside{
     display: flex;
     position: relative;
-    /* justify-content: center; */
+    justify-content: center;
     /* max-width: calc(var(--max-page-width) + 200px); */
-    /* width: 100%; */
+    width: 100%;
     /* margin: 0 auto; */
 }
 .aside{
@@ -150,6 +156,17 @@ onMounted(() => {
     font-weight: 500;
     border-color: var(--purp-light);
     color: var(--purp-light);
+}
+
+/* @media() */
+@media (max-width: 768px)
+{
+    .aside{
+        display: none;
+    }
+    .main-with-aside{
+        width: 100%;
+    }
 }
 
 .index-main{
@@ -267,6 +284,10 @@ onMounted(() => {
     color: var(--almost-white);
     align-self: flex-start;
     font-weight: 300;
+}
+
+.contact{
+    width: 100vw;
 }
 
 </style>

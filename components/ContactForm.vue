@@ -1,14 +1,54 @@
 <script setup>
+import {ref} from 'vue'
+
+import emailjs from '@emailjs/browser';
+emailjs.init("7pDV4S3mJyhBoXwIA");
+
+const form = ref(null);
+const inputReset = ref(null);
+
+const sendEmail = () => {
+    emailjs.sendForm('service_nuxt_portfolio', 'template_portfolio_basic', form.value, '7pDV4S3mJyhBoXwIA')
+    .then((result)=>{
+        console.log('success', result.text);
+        inputReset.value="";
+        toast.success("Message sent!");
+    }, (error)=>{
+        console.log('FAILED', error.text);
+        toast.error("Something went wrong");
+    });
+}
+
+import { useToast } from "vue-toastification";
+const toast = useToast();
+// toast.success("I'm a toast!");
 </script>
 
 <template>
 <section class="contact-section">
     <p class="title">Still have more questions? Contact me below!</p>
-    <div class="label-div">
-        <label for="message">Your message</label>
-        <textarea id="message" name="message"></textarea>
-    </div>
-    <button class="send hover">SEND <Icon name="ion:chevron-forward"></Icon></button>
+    <form ref="form" class="mail-form" @submit.prevent="sendEmail">
+        <div class="label-div">        
+            <label for="from_name">Your name</label>
+            <input type="text" class="text-input" id="name" name="from_name"
+             placeholder="John from [Potential Employer]" :value="inputReset">
+        </div>
+        <div class="label-div">        
+            <label for="reply_to">Your email</label>
+            <input type="email" class="text-input" id="email" name="reply_to"
+             placeholder="john@example.com" :value="inputReset">
+        </div>
+        <div class="label-div">        
+            <label for="subject">Subject</label>
+            <input type="text" class="text-input" id="email" name="subject"
+             :value="inputReset">
+        </div>
+        <div class="label-div">        
+            <label for="message">Your message</label>
+            <textarea id="message" name="message" :value="inputReset"></textarea>
+        </div>
+        <button class="send hover" type="submit">SEND <Icon name="ion:chevron-forward"></Icon></button>
+    </form>
     <div class="other">
         <p>Or through one of my socials:</p>
         <div class="socials">
@@ -40,6 +80,23 @@
     font-size: 24px;
     color: var(--almost-white);
     font-weight: 300;
+}
+
+.mail-form{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.text-input{
+    border: 2px solid var(--purp);
+    border-radius: 3px;
+    font-size: 16px;
+    width: 60%;
+    min-width: 250px;
 }
 
 .label-div{

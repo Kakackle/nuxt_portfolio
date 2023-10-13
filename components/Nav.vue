@@ -29,6 +29,7 @@
     position: sticky;
     top: 0px;
     z-index: 99;
+    width: 100%;
 }
 .nav-div{
     width: 100%;

@@ -84,6 +84,7 @@ const project_show = ref(1);
     /* padding: 0 20px; */
     padding-left: 20px;;
     width: 100%;
+    justify-content: center;
 }
 
 .main-img, .step-img{
