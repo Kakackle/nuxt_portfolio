@@ -12,15 +12,17 @@ const sendEmail = () => {
     .then((result)=>{
         console.log('success', result.text);
         inputReset.value="";
-        toast.success("Message sent!");
+        // toast.success("Message sent!");
     }, (error)=>{
         console.log('FAILED', error.text);
-        toast.error("Something went wrong");
+        // toast.error("Something went wrong");
     });
 }
 
-import { useToast } from "vue-toastification";
-const toast = useToast();
+// import { useToast } from "vue-toastification";
+// import pkg from 'vue-toastification';
+// const {useToast} = pkg;
+// const toast = useToast();
 // toast.success("I'm a toast!");
 </script>
 
