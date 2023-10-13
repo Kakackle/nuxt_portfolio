@@ -8,7 +8,7 @@
         <!-- <img class="user-blog" src="_nuxt/assets/img/hero_blob.svg">
         <img class="user-img" src="_nuxt/assets/img/example_user.png"> -->
         <img class="user-blog" src="/img/hero_blob.svg">
-        <img class="user-img" src="/img/example_user.png">
+        <img class="user-img" src="/img/about/img1.png">
     </div>
     <div class="hero-right">
         <p class="name">MACIEJ MARKOWSKI</p>
@@ -57,8 +57,9 @@
 
 .user-img{
     position: absolute;
-    height: 350px;
-    width: 350px;
+    height: 360px;
+    width: 360px;
+    border-radius: 50%;
 }
 
 

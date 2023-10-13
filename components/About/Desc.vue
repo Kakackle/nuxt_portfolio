@@ -14,7 +14,7 @@
     <div class="project-images">
             <figure class="project-figure">
                 <!-- <img class="project-image-large" src="_nuxt/assets//img//about//designy.png"> -->
-                <img class="project-image-large" src="/img//about//designy.png">
+                <img class="project-image-large" src="/img/about/designy.png">
                 <figcaption class="project-caption">The design process</figcaption>
             </figure>
         </div>
