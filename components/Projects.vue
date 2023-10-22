@@ -5,9 +5,9 @@ const cards = [
         img: "Sklep/page1.PNG",
         desc: "Guitar effect store with users, carts, detailed product pages, \
         reviews, a newsletter system and Stripe payment integration.",
-        tech: "Django with with a Django Rest Framework API serving static Vue files \
-        with webpack, utilizing Stripe for payments, Trello Sendgrid for newsletters, Postgresql \
-        as a database service and Amazon S3 for media file hosting",
+        tech: ["Django with with a Django Rest Framework API serving static Vue files \
+        with webpack", "Stripe payments integration", "Trello Sendgrid for newsletter handling",
+        "Postgresql as a database service and Amazon S3 for media file hosting"],
         live: ["https://django-vue-sklep.onrender.com/",],
         git: ["https://github.com/Kakackle/django_vue_sklep",],
     },
@@ -16,8 +16,8 @@ const cards = [
         img: "Blog/Home.PNG",
         desc: "Account-based blog with multi-image markdown post creation, tag definitons, \
         comments with replies, including sorting and filterign by data-based criteria.",
-        tech: "Vue frontend consuming a Django backend API, with OpenAI documentation, pagination, query filtering, \
-        user following and post liking systems",
+        tech: ["Vue frontend consuming a Django backend API", "OpenAPI documentation", "pagination, query filtering, \
+        user following and post liking systems"],
         live: ["https://vue-blog-front.netlify.app/", "https://web-production-4c6b.up.railway.app/api/posts/"],
         git: ["https://github.com/Kakackle/vue_blog","https://github.com/Kakackle/django_blog"],
     },
@@ -25,7 +25,7 @@ const cards = [
         name: "Totally not Instagram / Django",
         img: "Insta/Home.PNG",
         desc: "Instagram clone with infinite scroll, account, follow, like, comment and post filter functionalities",
-        tech: "Fully Django-based, with file hosting on Amazon S3, Booststrap django forms and HTMX for in-place form refreshing",
+        tech: ["Fully Django-based", "file hosting on Amazon S3", "Booststrap django forms and HTMX for in-place form refreshing"],
         live: ["https://django-insta.onrender.com",],
         git: ["https://github.com/Kakackle/django_insta",],
     },
@@ -34,7 +34,7 @@ const cards = [
         img: "Forum/Post.PNG",
         desc: "Account-based forum with posts withing threads within topic-based boards, dockerized with a Postgresql \
         database, Unittes tand Pytest coverage, bootstrap styling,",
-        tech: "Django, Docker, Pytest, Flake8",
+        tech: ["Django fullstack", "Dockerized with a postgres database", "Pytest coverage", "Github Action with Flake8 implementation and testing"],
         live: ["Not yet!",],
         git: ["https://github.com/Kakackle/django_forum",],
     },

@@ -5,11 +5,13 @@
 <section class="desc-section">
     <div class="desc-div">
         <p class="desc-title">Programatically</p>
-        <p class="desc">Interested in learning new technologies, frameworks, languages, love the feeling of progress and making thinks work. My favoruite language is Python, but I've spent some time in Javascript, C#, C++ along with a lick of Java and C.</p>
-        <p class="desc">In python I have worked with OOP, libraries like OpenCV for computer vision tasks, Tensorflow and Pytorch for ML purposes and numpy and pandas for data-focused purposes.</p>
-        <p class="desc">In C# I've worked with EmguCV (essentially a OpenCV port) for computer vision study tasks and Unity for my Master's thesis.</p>
-        <p class="desc">C++ served me as a classic introduction to programming and a programmatic way of thinking as well as for Arduino-based personal and scholar projects.</p>
-        <p class="desc">As part of my creative drive and for the purposes of fullstack dev, I also use Figma to create website layouts.</p>
+        <ul class="desc-div desc-div-list">
+            <li class="desc">Interested in learning new technologies, frameworks, languages, love the feeling of progress and making thinks work. My favoruite language is Python, but I've spent some time in Javascript, C#, C++ along with a lick of Java and C.</li>
+            <li class="desc">In python I have worked with OOP, libraries like OpenCV for computer vision tasks, Tensorflow and Pytorch for ML purposes and numpy and pandas for data-focused purposes.</li>
+            <li class="desc">In C# I've worked with EmguCV (essentially a OpenCV port) for computer vision study tasks and Unity for my Master's thesis.</li>
+            <li class="desc">C++ served me as a classic introduction to programming and a programmatic way of thinking as well as for Arduino-based personal and scholar projects.</li>
+            <li class="desc">As part of my creative drive and for the purposes of fullstack dev, I also use Figma to create website layouts.</li>
+        </ul>
     </div>
     <div class="project-images">
             <figure class="project-figure">
@@ -20,8 +22,10 @@
         </div>
     <div class="desc-div">
         <p class="desc-title">Education</p>
-        <p class="desc">During studies I mostly learned about control theory and applications, ways of controlling robots and the mechanical calculations required plus various technical topics such as Digital Signal Processing, Motor control, Optimization Methods, Electric circuits, physics and system simulation techniques, escpecially in MATLAB and Simulink. </p>
-        <p class="desc">For my Bachelor's thesis I created a mechanical system capable of visually assessing the state of a Rubik's cube, find a solution and solve it itself. The computer vision program was wrriten in C#, connected through UART to and Arduino unit controlling the robot.</p>
+        <ul class="desc-div desc-div-list">
+            <li class="desc">During studies I mostly learned about control theory and applications, ways of controlling robots and the mechanical calculations required plus various technical topics such as Digital Signal Processing, Motor control, Optimization Methods, Electric circuits, physics and system simulation techniques, escpecially in MATLAB and Simulink. </li>
+            <li class="desc">For my Bachelor's thesis I created a mechanical system capable of visually assessing the state of a Rubik's cube, find a solution and solve it itself. The computer vision program was wrriten in C#, connected through UART to and Arduino unit controlling the robot.</li>
+        </ul>
         <div class="project-images">
             <figure class="project-figure">
                 <img class="project-image" src="/img/about/caly_ukl_1.jpg">
@@ -65,8 +69,10 @@
     </div>
     <div class="desc-div">
         <p class="desc-title">Personal</p>
-        <p class="desc">My biggest passion (outside of programming of course &#128516;) is music, both in terms of listening and creating. I enjoy all genres, although my favourites will probably always remain in the realm of jazz, soul, oldschool hiphop and all the other things that groove. </p>
-        <p class="desc">My biggest passion project so far has been a "release" of a compilation of boombap beats inspired by artists like MF DOOM, NOON, Madlib, Q-Tip and more, which you can listen to for free on youtube: <a class="intermedium" href="https://www.youtube.com/playlist?list=PLc0mBJHoWgQNCvPh6Upf2JAjyQ9yb2Ouh" target="_blank">Intermedium</a></p>
+        <ul class="desc-div desc-div-list">
+            <li class="desc">My biggest passion (outside of programming of course &#128516;) is music, both in terms of listening and creating. I enjoy all genres, although my favourites will probably always remain in the realm of jazz, soul, oldschool hiphop and all the other things that groove. </li>
+            <li class="desc">My biggest passion project so far has been a "release" of a compilation of boombap beats inspired by artists like MF DOOM, NOON, Madlib, Q-Tip and more, which you can listen to for free on youtube: <a class="intermedium" href="https://www.youtube.com/playlist?list=PLc0mBJHoWgQNCvPh6Upf2JAjyQ9yb2Ouh" target="_blank">Intermedium</a></li>
+        </ul>
         <div class="project-images">
             <figure class="project-figure">
                 <img class="project-image-square" src="/img/about/OKLADKA_PROBA_1.png">
@@ -100,6 +106,10 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
+}
+
+.desc-div-list{
+    padding-left: 20px;
 }
 
 .desc-title{

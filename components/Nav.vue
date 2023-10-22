@@ -8,7 +8,8 @@
             <ul class="nav-links">
                 <li class="link"><NuxtLink class="link" to="/">Home</NuxtLink></li>
                 <li class="link"><NuxtLink class="link" to="/about">About</NuxtLink></li>
-                <li class="link"><NuxtLink class="link" to="/projects">Projects</NuxtLink></li>
+                <li class="link"><NuxtLink class="link" to="/resume">Resume</NuxtLink></li>
+                <!-- <li class="link"><NuxtLink class="link" to="/projects">Projects</NuxtLink></li> -->
                 <!-- <li class="link"><NuxtLink to="/other">Other</NuxtLink></li> -->
                 <!-- <li class="link"><NuxtLink to="/projects/blog">Blog</NuxtLink></li> -->
             </ul>

@@ -22,7 +22,12 @@
             <a class="social link" href="https://www.linkedin.com/in/maciej-markowski-65407b211/" target="_blank"
                 ><Icon name="uil:linkedin" color="var(--almost-white)"/></a>
         </div>
-        <p class="desc-1">I am a technology-curious, breadth-first, mostly Python focused programmer, captivated by the creative aspect of development and system design, especialy in Web dev, but open to anything. I love discovering and learning about new things, self-development and completing creative, complex, attention-demanding tasks. I have a MSc. degree in Automation Theory and Robot Control at TUL under my belt, mainly interested in the robotics part. In my free time I listen to various genres of music, mostly jazz, oldschool hiphop and soul, watch arthouse movies, learn instruments (guitar, bass and piano) and create some music of my own.</p>    
+        <div class="desc-1-div">
+            <p class="desc-1">I am a technology-curious, breadth-first, mostly Python focused programmer, captivated by the creative aspect of development and system design, especialy in Web dev, but open to anything.</p>    
+            <p class="desc-1">I love discovering and learning about new things, self-development and completing creative, complex, attention-demanding tasks.</p>
+            <p class="desc-1">I have a MSc. degree in Automation Theory and Robot Control at TUL under my belt, mainly interested in the robotics part.</p>
+            <p class="desc-1">In my free time I listen to various genres of music, mostly jazz, oldschool hiphop and soul, watch arthouse movies, learn instruments (guitar, bass and piano) and create some music of my own.</p>
+        </div>
     </div>
 </main>
 </template>
@@ -113,6 +118,11 @@
     font-weight: 300;
 }
 
+.desc-1-div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
 
 </style>

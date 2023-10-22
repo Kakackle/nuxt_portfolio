@@ -26,9 +26,11 @@ const img_path = base_path + card.img;
                 </p>
                 <div class="with-title">
                     <p class="built">Built with:</p>
-                    <p class="desc">
-                        {{ card.tech }}
-                    </p>
+                    <ul class="desc desc-list">
+                        <li class="desc-item"
+                        v-for="(item, index) in card.tech">
+                        {{ item }}</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -184,6 +186,13 @@ const img_path = base_path + card.img;
     width: 100%;
     /* text-wrap: wrap;
     overflow-wrap: break-word; */
+}
+
+.desc-list{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .links{
