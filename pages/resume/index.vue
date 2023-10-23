@@ -3,7 +3,7 @@
 
 <template>
 <main class="resume-main">
-    <img class="resume-image" src="/img/resume.png">
+    <img class="resume-image" src="../../assets/img/resume.png">
 </main>
 </template>
 
