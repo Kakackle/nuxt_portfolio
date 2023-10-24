@@ -56,7 +56,6 @@ const cards = [
 <style scoped>
 .projects-section{
     width: 90%;
-    background-color: olivedrab;
     max-width: var(--max-page-width);
     display: flex;
     flex-direction: column;
@@ -72,7 +71,6 @@ const cards = [
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    background-color: brown;
     justify-content: center;
     /* row-gap: 20px; */
     gap: 30px;
