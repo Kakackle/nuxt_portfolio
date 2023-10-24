@@ -132,15 +132,16 @@ onMounted(() => {
 }
 .aside{
     /* width: 140px; */
-    width: 200px;
+    /* width: 200px; */
     /* width: 20%; */
     /* position: absolute; */
+    width: 15%;
 }
 .aside > div{
     position: sticky;
     top: 80px;
-    /* padding-right: 20px; */
-    padding-left: 20px;
+    padding-right: 20px;
+    /* padding-left: 20px; */
 }
 
 .aside > div > a{
@@ -187,17 +188,14 @@ onMounted(() => {
 
 .collapse-controls{
     position: absolute;
-    /* right: 20px; */
     left: 20px;
     top: 0px;
     background-color: var(--purp-dark-05);
-    /* width: 100%; */
-    /* opacity: 0.5; */
 }
 
-.collapse-icon{
+/* .collapse-icon{
     font-size: 36px;
-}
+} */
 
 .section-closed{
     display: flex;

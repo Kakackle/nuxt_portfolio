@@ -55,6 +55,7 @@ const project_show = ref(1);
     gap: 10px;
     width: 100%;
     padding: 0 20px;
+    padding-left: 40px;
     /* align-self: flex-start; */
     /* width: 80%; */
 }

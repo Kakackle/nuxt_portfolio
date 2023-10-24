@@ -75,4 +75,11 @@
     border: 2px solid var(--almost-white);
 }
 
+@media (max-width: 760px)
+{
+    .logo, .link{
+        font-size: 18px;
+    }
+}
+
 </style>

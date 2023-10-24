@@ -74,6 +74,8 @@ const img_path = base_path + card.img;
 
 .card{
     display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
     gap: 20px;
     max-width: 670px;
     width: 100%;
@@ -99,7 +101,7 @@ const img_path = base_path + card.img;
     /* width: 100%; */
     /* height: 100%; */
     flex-shrink: 0;
-
+    margin: 10px;
     overflow: hidden;
     position: relative;
     z-index: 0;
@@ -138,14 +140,6 @@ const img_path = base_path + card.img;
 .live:hover, .git:hover{
     transform: scale(1.1);
     transition: all 0.1s;
-}
-
-@media (max-width: 760px)
-{
-    .img-div{
-        width: 240px;
-        height: 300px;
-    }
 }
 
 .card-img{
@@ -212,6 +206,12 @@ const img_path = base_path + card.img;
     color: var(--purp-light);
     font-weight: 500;
     font-size: 20px;
+    /* text-decoration: underline; */
+    /* text-decoration-color: var(--purp-soft); */
+    /* text-underline-offset: 3px; */
+    background-color: var(--purp-dark-03);
+    padding: 4px 8px;
+
 }
 
 .live:hover, .git:hover{
@@ -220,6 +220,23 @@ const img_path = base_path + card.img;
 
 .git{
     color: var(--almost-white);
+}
+
+/* @media (max-width: 760px){
+    .project-title{
+        font-size: 16px;
+    }
+} */
+
+@media (max-width: 760px)
+{
+    .img-div{
+        width: 240px;
+        height: 300px;
+    }
+    .card{
+        flex-wrap: wrap;
+    }
 }
 
 </style>

@@ -76,6 +76,7 @@ const sendEmail = () => {
     padding: 20px;
     padding-bottom: var(--section-margin);
     gap: 20px;
+    box-sizing: content-box;
 }
 
 .title{

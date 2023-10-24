@@ -8,7 +8,7 @@
                 <NuxtLink class="shiny" to="/">
                     <span class="lang">ENG</span><Icon name="flagpack:gb-ukm"></Icon></NuxtLink>
                 <NuxtLink class="shiny" to="/pl">
-                    <span class="lang">PL</span><Icon name="flagpack:pl"></Icon></NuxtLink>
+                    <span class="lang wip">PL</span><Icon name="flagpack:pl"></Icon></NuxtLink>
             </div>
             <div class="name-div">
                 <div class="name-top">
@@ -67,6 +67,7 @@
 .name-div{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .name-1, .name-3{
@@ -98,8 +99,13 @@
 
 .name-2{
     font-size: 28px;
+    /* font-size: 1.75rem; */
     height: 20px;
-    text-decoration: none;
+    /* height: 1.25rem; */
+    text-decoration: underline;
+    text-decoration-color: var(--purp-light);
+    text-underline-offset: 3px;
+    text-decoration-thickness: 2px;
 }
 
 .skills{
@@ -190,6 +196,16 @@
 .shiny:hover::before{
     left: 100%;
     transition: all 0.6s;
+}
+
+@media (max-width: 760px)
+{
+    .name-1, .name-3{
+        font-size: 56px;
+    }
+    .name-2{
+        font-size: 20px;
+    }
 }
 
 </style>
