@@ -1,4 +1,11 @@
 <script setup>
+// import { SkillHover } from '#build/components';
+import skills from "../skills.json"
+// const skill = {
+//     file:"htmlcssjs.png",
+//     name:"html, css, js",
+//     whiteback: false
+// }
 </script>
 
 <template>
@@ -19,28 +26,31 @@
                 <p class="name-3">MARKOWSKI</p>
             </div>
             <p class="bio">Full-stack web dev, proficient in Django and Vue, interested in all things Python. Automation and Robot Control MSc., persistent learner, self-called musician, Łódź lover.</p>
+            <p class="bio">Skills:</p>
             <div class="skills">
-                <img class="skill-img" src="../assets/img/skills/htmlcssjs.png">
+                <!-- <img class="skill-img" src="../assets/img/skills/htmlcssjs.png"> -->
+                <SkillHover v-for="skill in skills" :key="skill.file" :skill="skill"></SkillHover>
                 <img class="skill-img" src="../assets/img/skills/vue1.png">
                 <img class="skill-img" src="../assets/img/skills/django1.png">
                 <img class="skill-img" src="../assets/img/skills/nuxt.png">
+                <img class="skill-img" src="../assets/img/skills/react.png">
                 <img class="skill-img drf" src="../assets/img/skills/drf1.png">
                 <img class="skill-img" src="../assets/img/skills/python1.png">
                 <img class="skill-img" src="../assets/img/skills/Pytest.png">
                 <img class="skill-img" src="../assets/img/skills/opencv.png">
                 <img class="skill-img" src="../assets/img/skills/git.png">
-                <img class="skill-img" src="../assets/img/skills/docker1.png">
                 <img class="skill-img" src="../assets/img/skills/postgresql.png">
                 <img class="skill-img" src="../assets/img/skills/figma1.png">
                 <img class="skill-img" src="../assets/img/skills/tailwind1.png">
                 <img class="skill-img" src="../assets/img/skills/sass1.png">
             </div>
             <div class="skills-titled">
-                <p class="bio">+ Currently working on:</p>
+                <p class="bio">Currently working on:</p>
                 <div class="skills skills-working">
+                    <img class="skill-img" src="../assets/img/skills/docker1.png">
                     <img class="skill-img" src="../assets/img/skills/fastapi.png">
-                    <img class="skill-img" src="../assets/img/skills/aws1.png">
-                    <img class="skill-img" src="../assets/img/skills/react.png">
+                    <img class="skill-img drf" src="../assets/img/skills/aws1.png">
+                    <img class="skill-img drf" src="../assets/img/skills/flask.png">
                 </div>
             </div>
         </div>
@@ -140,10 +150,14 @@
 .skill-img{
     align-self: center;
     max-height: 80px;
+    /* max-width: 80px; */
+    /* background-color: var(--almost-white); */
+    /* border-radius: 50%; */
 }
 
 .drf{
     background-color: var(--almost-white);
+    padding: 10px;
 }
 
 .languages{

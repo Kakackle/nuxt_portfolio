@@ -35,7 +35,7 @@ const img_path = base_path + card.img;
             </div>
         </div>
         <div class="links">
-            <div class="live-links">
+            <div class="live-links" v-if="card.live.length > 0">
                 <a class="live hover-underline" v-for="(live, index) in card.live"
                 :href="live">Live {{index+1}}</a>
             </div>

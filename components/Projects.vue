@@ -35,7 +35,7 @@ const cards = [
         desc: "Account-based forum with posts withing threads within topic-based boards, dockerized with a Postgresql \
         database, Unittes tand Pytest coverage, bootstrap styling,",
         tech: ["Django fullstack", "Dockerized with a postgres database", "Pytest coverage", "Github Action with Flake8 implementation and testing"],
-        live: ["Not yet!",],
+        live: [],
         git: ["https://github.com/Kakackle/django_forum",],
     },
     {

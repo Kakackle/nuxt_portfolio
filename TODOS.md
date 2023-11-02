@@ -3,6 +3,10 @@ TODO: jakas animacja w tle calej strony prosta zapetlona
 
 TODO: skills na grid i DRF zajmuje dwie kratki a reszta jedna? idk, maybe
 
+****
+TODO: iframe responsive? bo aktualnie nie jest
+
+TODO: na hoverze skilli podpisy tekstowe dokoncz
 
 co zawrzec w about:
 
