@@ -1,5 +1,4 @@
 <script setup>
-// import 'assets/css/extra.css';
 const projects_show = ref(1);
 const indepth_show = ref(1);
 
@@ -14,7 +13,7 @@ const headers = [
     "Contact"
 ]
 
-// setting the header currently intesecting by reading intersecting target id
+// setting the header currently intersecting by reading intersecting target id (of the header)
 const currentHeader = ref("");
 
 onMounted(() => {
@@ -34,19 +33,12 @@ onMounted(() => {
 
     // mouse light
     const blob = document.getElementById("blob");
+    window.onpointermove = event => { 
+    const { clientX, clientY } = event;
 
-        window.onpointermove = event => { 
-        const { clientX, clientY } = event;
-
-        // blob.animate({
-        //     left: `${clientX}px`,
-        //     top: `${clientY}px`
-        // }, { duration: 200, fill: "forwards" });
-
-        blob.style.left = `${clientX}px`;
-        blob.style.top = `${clientY}px`;
-        }
-
+    blob.style.left = `${clientX}px`;
+    blob.style.top = `${clientY}px`;
+    }
 })
 
 </script>
@@ -94,17 +86,9 @@ onMounted(() => {
             <p class="section-title">This project</p>
             <p class="desc">Built using Nuxt, a server-side rendered framework based on Vue, utitlizing various styling techniques such as an intersection observer, css animations and GSAP - a javascript animation library. Built for speed etc</p>
         </section>
-        <!-- <ProjectsOther class="section-margin"></ProjectsOther> -->
     </main>
     <aside class="aside">
         <div>
-            <!-- <p>{{ currentHeader }}</p> -->
-
-            <!-- <a v-for="(header, index) in headers" :key="header" :href="`#${header}`"
-            :class="{active: header === currentHeader}">
-            {{ header }}
-            </a> -->
-
             <NuxtLink v-for="(header, index) in headers" :key="header" :to="`#${header}`"
             :class="{active: header === currentHeader}">
             {{ header }}
@@ -112,36 +96,25 @@ onMounted(() => {
         </div>
     </aside>
     <div id="blob"></div>
-    <!-- <div id="blur"></div> -->
 </main>
 <ContactForm id="Contact" class="contact"></ContactForm>
 </section>
 </template>
 
 <style scoped>
-/* .master{
-    width: 100%;
-} */
 .main-with-aside{
     display: flex;
     position: relative;
     justify-content: center;
-    /* max-width: calc(var(--max-page-width) + 200px); */
     width: 100%;
-    /* margin: 0 auto; */
 }
 .aside{
-    /* width: 140px; */
-    /* width: 200px; */
-    /* width: 20%; */
-    /* position: absolute; */
     width: 15%;
 }
 .aside > div{
     position: sticky;
     top: 80px;
     padding-right: 20px;
-    /* padding-left: 20px; */
 }
 
 .aside > div > a{
@@ -159,7 +132,6 @@ onMounted(() => {
     color: var(--purp-light);
 }
 
-/* @media() */
 @media (max-width: 768px)
 {
     .aside{
@@ -175,7 +147,6 @@ onMounted(() => {
     flex-direction: column;
     align-items: center;
     max-width: var(--max-page-width);
-    /* width: 80%; */
     padding: 0px var(--max-page-padding);
     margin: 0 auto;
 }
@@ -193,14 +164,9 @@ onMounted(() => {
     background-color: var(--purp-dark-05);
 }
 
-/* .collapse-icon{
-    font-size: 36px;
-} */
-
 .section-closed{
     display: flex;
     gap: 10px;
-    /* width: 100%; */
 }
 
 .slide-fade-enter-active {
@@ -216,17 +182,6 @@ onMounted(() => {
   transform: translateY(-60px);
   opacity: 0;
 }
-
-/* .light
-{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    background: radial-gradient(circle at var(--x) var(--y), transparent 5%, var(--purp-deep-02) 10%);
-} */
 
 @keyframes rotate {
   from {
@@ -254,17 +209,8 @@ onMounted(() => {
   background: linear-gradient(to right, aquamarine, mediumpurple);
   animation: rotate 20s infinite;
   opacity: 0.5;
-  /* backdrop-filter: blur(12vmax); */
   filter:blur(200px);
   z-index: -5;
-}
-
-#blur {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: -4;
-  backdrop-filter: blur(12vmax);
 }
 
 .this-project{

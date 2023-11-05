@@ -9,9 +9,6 @@
                 <li class="link"><NuxtLink class="link" to="/">Home</NuxtLink></li>
                 <li class="link"><NuxtLink class="link" to="/about">About</NuxtLink></li>
                 <li class="link"><NuxtLink class="link" to="/resume">Resume</NuxtLink></li>
-                <!-- <li class="link"><NuxtLink class="link" to="/projects">Projects</NuxtLink></li> -->
-                <!-- <li class="link"><NuxtLink to="/other">Other</NuxtLink></li> -->
-                <!-- <li class="link"><NuxtLink to="/projects/blog">Blog</NuxtLink></li> -->
             </ul>
         </div>
     </nav>
@@ -23,8 +20,6 @@
     justify-content: center;
     align-items: center;
     height: 50px;
-    /* background-color: var(--purp-deep); */
-    /* filter: opacity(0.5); */
     background-color: var(--purp-deep-02);
     backdrop-filter: blur(2px);
     position: sticky;
@@ -44,7 +39,6 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    /* text-decoration: none; */
     list-style: none;
 }
 
@@ -59,9 +53,6 @@
     transform: scale(1.05);
 }
 
-/* .router-link-active{
-    color: var(--purp-soft);
-} */
 
 .link.router-link-active{
     color: var(--purp-soft);

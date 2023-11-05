@@ -12,18 +12,10 @@ const sendEmail = () => {
     .then((result)=>{
         console.log('success', result.text);
         inputReset.value="";
-        // toast.success("Message sent!");
     }, (error)=>{
         console.log('FAILED', error.text);
-        // toast.error("Something went wrong");
     });
 }
-
-// import { useToast } from "vue-toastification";
-// import pkg from 'vue-toastification';
-// const {useToast} = pkg;
-// const toast = useToast();
-// toast.success("I'm a toast!");
 </script>
 
 <template>
@@ -66,7 +58,6 @@ const sendEmail = () => {
 
 <style scoped>
 .contact-section{
-    /* max-width: var(--max-page-width); */
     width: 100%;
     background-color: var(--purp-dark);
     margin-top: var(--section-margin);
@@ -100,6 +91,7 @@ const sendEmail = () => {
     font-size: 16px;
     width: 60%;
     min-width: 250px;
+    padding: 2px 4px;
 }
 
 .label-div{

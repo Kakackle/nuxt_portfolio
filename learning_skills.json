@@ -13,10 +13,5 @@
         "file": "aws1.png",
         "name": "Amazon Web Services",
         "whiteback": true
-    },
-    {
-        "file": "flask.png",
-        "name": "Flask",
-        "whiteback": true
     }
 ]

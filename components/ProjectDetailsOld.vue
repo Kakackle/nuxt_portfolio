@@ -57,7 +57,6 @@ const steps = project.steps;
 
 .main-title{
     color: var(--purp-light);
-    /* margin-left: 20px; */
 }
 
 .sub-title{

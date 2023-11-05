@@ -65,20 +65,10 @@ const cards = [
 }
 
 .project-cards{
-    /* display: grid; */
-    /* grid-template-columns: repeat(auto-fit, 650px); */
-    /* grid-template-columns: repeat(2, 1fr); */
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
-    /* row-gap: 20px; */
     gap: 30px;
 }
-/* .project-cards{
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    gap: 20px;
-} */
 </style>

@@ -2,9 +2,7 @@
 const props = defineProps(['project']);
 const project = props.project;
 const main_features = project.main_features;
-// const base_path = "_nuxt/assets/img/projects/";
 const base_path = "/img/projects/";
-// const img_path = base_path + card.img;
 const project_show = ref(1);
 </script>
 
@@ -56,8 +54,6 @@ const project_show = ref(1);
     width: 100%;
     padding: 0 20px;
     padding-left: 40px;
-    /* align-self: flex-start; */
-    /* width: 80%; */
 }
 
 .project-titles p{
@@ -69,36 +65,25 @@ const project_show = ref(1);
 
 .main-title{
     color: var(--purp-light);
-    /* margin-left: 20px; */
 }
 
 .sub-title{
     color: var(--almost-white);
-    /* margin-left: 40px; */
 }
 
 .main-images{
     display: flex;
     gap: 30px;
-    /* row-gap: 30px; */
     flex-wrap: wrap;
-    /* padding: 0 20px; */
     padding-left: 20px;;
     width: 100%;
     justify-content: center;
 }
 
-.main-img, .step-img{
+.main-img{
     background-color: var(--purp-dark);
     width: 300px;
     height: 420px;
-    /* object-fit: contain; */
-}
-
-.step-img{
-    width: 300px;
-    height: 150px;
-    object-fit: cover;
 }
 
 .img-desc{
@@ -113,9 +98,7 @@ const project_show = ref(1);
     color: var(--almost-white);
     font-weight: 300;
     padding-left: 10px;
-    /* padding: 10px; */
 }
-
 
 .section-collapsible{
     width: 100%;
@@ -126,12 +109,8 @@ const project_show = ref(1);
 
 .collapse-controls{
     position: absolute;
-    /* right: 20px; */
-    /* left: 20px; */
     top: 0px;
     background-color: var(--purp-dark-05);
-    /* width: 100%; */
-    /* opacity: 0.5; */
 }
 
 .collapse-icon{
@@ -141,7 +120,6 @@ const project_show = ref(1);
 .section-closed{
     display: flex;
     gap: 10px;
-    /* width: 100%; */
 }
 
 .slide-fade-enter-active {

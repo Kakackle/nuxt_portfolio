@@ -1,8 +1,6 @@
 <script setup>
 const props = defineProps(['skill']);
 const skill = props.skill;
-// const img_link = `../assets/img/skills${skill.file}`;
-// const img_link = `_nuxt/assets/img/skills${skill.file}`;
 const img_link = `/img/skills/${skill.file}`;
 </script>
 
@@ -38,12 +36,10 @@ const img_link = `/img/skills/${skill.file}`;
     padding: 2px 6px;
     top: 25%;
     width: 100%;
-    /* right: 50%; */
 }
 
 .skill-div:hover .hide{
     display: flex;
     justify-content: center;
-    /* cursor: initial; */
 }
 </style>
