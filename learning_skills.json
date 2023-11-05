@@ -1,0 +1,22 @@
+[
+    {
+        "file": "docker1.png",
+        "name": "Docker",
+        "whiteback": false
+    },
+    {
+        "file": "fastapi.png",
+        "name": "FastAPI",
+        "whiteback": false
+    },
+    {
+        "file": "aws1.png",
+        "name": "Amazon Web Services",
+        "whiteback": true
+    },
+    {
+        "file": "flask.png",
+        "name": "Flask",
+        "whiteback": true
+    }
+]

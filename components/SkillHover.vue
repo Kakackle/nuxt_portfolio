@@ -37,11 +37,13 @@ const img_link = `/img/skills/${skill.file}`;
     color: var(--almost-white);
     padding: 2px 6px;
     top: 25%;
+    width: 100%;
     /* right: 50%; */
 }
 
 .skill-div:hover .hide{
-    display: block;
+    display: flex;
+    justify-content: center;
     /* cursor: initial; */
 }
 </style>

@@ -1,7 +1,67 @@
 [
     {
         "file": "htmlcssjs.png",
-        "name": "html, css, js",
+        "name": "HTML, CSS, Javascript",
+        "whiteback": false
+    },
+    {
+        "file": "vue1.png",
+        "name": "Vue.js",
+        "whiteback": false
+    },
+    {
+        "file": "nuxt.png",
+        "name": "Nuxt.js",
+        "whiteback": false
+    },
+    {
+        "file": "react.png",
+        "name": "React",
+        "whiteback": false
+    },
+    {
+        "file": "drf1.png",
+        "name": "Django Rest Framework",
+        "whiteback": true
+    },
+    {
+        "file": "python1.png",
+        "name": "Python",
+        "whiteback": false
+    },
+    {
+        "file": "Pytest.png",
+        "name": "Pytest",
+        "whiteback": false
+    },
+    {
+        "file": "opencv.png",
+        "name": "OpenCV",
+        "whiteback": false
+    },
+    {
+        "file": "git.png",
+        "name": "Git",
+        "whiteback": false
+    },
+    {
+        "file": "postgresql.png",
+        "name": "PostgreSQL",
+        "whiteback": false
+    },
+    {
+        "file": "figma1.png",
+        "name": "Figma",
+        "whiteback": false
+    },
+    {
+        "file": "tailwind1.png",
+        "name": "Tailwind",
+        "whiteback": false
+    },
+    {
+        "file": "sass1.png",
+        "name": "Sass",
         "whiteback": false
     }
 ]

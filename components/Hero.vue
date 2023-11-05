@@ -1,6 +1,7 @@
 <script setup>
 // import { SkillHover } from '#build/components';
 import skills from "../skills.json"
+import learning_skills from "../learning_skills.json"
 // const skill = {
 //     file:"htmlcssjs.png",
 //     name:"html, css, js",
@@ -30,7 +31,7 @@ import skills from "../skills.json"
             <div class="skills">
                 <!-- <img class="skill-img" src="../assets/img/skills/htmlcssjs.png"> -->
                 <SkillHover v-for="skill in skills" :key="skill.file" :skill="skill"></SkillHover>
-                <img class="skill-img" src="../assets/img/skills/vue1.png">
+                <!-- <img class="skill-img" src="../assets/img/skills/vue1.png">
                 <img class="skill-img" src="../assets/img/skills/django1.png">
                 <img class="skill-img" src="../assets/img/skills/nuxt.png">
                 <img class="skill-img" src="../assets/img/skills/react.png">
@@ -42,15 +43,16 @@ import skills from "../skills.json"
                 <img class="skill-img" src="../assets/img/skills/postgresql.png">
                 <img class="skill-img" src="../assets/img/skills/figma1.png">
                 <img class="skill-img" src="../assets/img/skills/tailwind1.png">
-                <img class="skill-img" src="../assets/img/skills/sass1.png">
+                <img class="skill-img" src="../assets/img/skills/sass1.png"> -->
             </div>
             <div class="skills-titled">
                 <p class="bio">Currently working on:</p>
                 <div class="skills skills-working">
-                    <img class="skill-img" src="../assets/img/skills/docker1.png">
+                <SkillHover v-for="skill in learning_skills" :key="skill.file" :skill="skill"></SkillHover>
+                    <!-- <img class="skill-img" src="../assets/img/skills/docker1.png">
                     <img class="skill-img" src="../assets/img/skills/fastapi.png">
                     <img class="skill-img drf" src="../assets/img/skills/aws1.png">
-                    <img class="skill-img drf" src="../assets/img/skills/flask.png">
+                    <img class="skill-img drf" src="../assets/img/skills/flask.png"> -->
                 </div>
             </div>
         </div>
