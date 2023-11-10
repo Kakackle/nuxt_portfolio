@@ -47,35 +47,22 @@ const img_path = base_path + card.img;
         </div>
     </div>
     <p class="project-title card" v-else>...And more to come!</p>
-    <!-- sam opis, bez obrazka -->
-    <!-- <div class="card" v-else>
-        <div class="img-div">
-            <p class="desc">
-            {{ card_desc }}
-            </p>
-        </div>
-    </div> -->
 </template>
 
 <style scoped>
 .project{
     display: flex;
     flex-direction: column;
-    /* gap: 10px; */
 }
 
 .project-title{
     font-size: 24px;
     color: var(--almost-white);
     padding: 10px;
-    /* font-weight: 300; */
-    /* text-decoration: underline; */
-    /* text-decoration-color: var(--purp-light); */
 }
 
 .card{
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: center;
     gap: 20px;
     max-width: 670px;
@@ -99,8 +86,6 @@ const img_path = base_path + card.img;
     align-items: center;
     justify-content: center;
     padding: 10px;
-    /* width: 100%; */
-    /* height: 100%; */
     flex-shrink: 0;
     margin: 10px;
     overflow: hidden;
@@ -130,7 +115,6 @@ const img_path = base_path + card.img;
 }
 
 .img-div:hover{
-    /* transform: scale(1.02); */
     transition: all 0.3s;
 }
 

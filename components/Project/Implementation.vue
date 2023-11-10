@@ -28,7 +28,6 @@ const details = props.details;
     gap: 30px;
     width: 100%;
     max-width: var(--max-page-width);
-    /* align-items: center; */
 }
 
 .detail-div{

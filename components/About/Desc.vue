@@ -15,7 +15,6 @@
     </div>
     <div class="project-images">
             <figure class="project-figure">
-                <!-- <img class="project-image-large" src="_nuxt/assets//img//about//designy.png"> -->
                 <img class="project-image-large" src="/img/about/designy.png">
                 <figcaption class="project-caption">The design process</figcaption>
             </figure>
@@ -76,11 +75,9 @@
         <div class="project-images">
             <figure class="project-figure">
                 <img class="project-image-square" src="/img/about/OKLADKA_PROBA_1.png">
-                <!-- <figcaption class="project-caption">front</figcaption> -->
             </figure>
             <figure class="project-figure">
                 <img class="project-image-square" src="/img/about/okladka_tyl.png">
-                <!-- <figcaption class="project-caption">Guitar effect schema</figcaption> -->
             </figure>
         </div>
         <p class="desc">Besides music I enjoy all forms of art, be it movies, drawings or books, with a side of indie or fighting games</p>
@@ -145,7 +142,6 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    /* justify-content: center; */
 }
 
 .project-image{

@@ -136,8 +136,6 @@ import learning_skills from "../learning_skills.json"
     font-size: 20px;
     font-weight: 400;
     color: var(--almost-white);
-    /* text-decoration: underline; */
-    /* text-decoration-color: var(--purp-light); */
 }
 
 /* shiny button */

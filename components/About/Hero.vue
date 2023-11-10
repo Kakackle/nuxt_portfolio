@@ -5,8 +5,6 @@
 <template>
 <main class="hero-main">
     <div class="hero-left">
-        <!-- <img class="user-blog" src="_nuxt/assets/img/hero_blob.svg">
-        <img class="user-img" src="_nuxt/assets/img/example_user.png"> -->
         <img class="user-blog" src="/img/hero_blob.svg">
         <img class="user-img" src="/img/about/img1.png">
     </div>
@@ -40,7 +38,6 @@
     margin: 0 auto;
     gap: 40px;
     flex-wrap: wrap;
-    /* height: 100%; */
     min-height: 400px;
     justify-content: center;
 }
@@ -84,7 +81,6 @@
     text-decoration-color: var(--purp-light);
     text-underline-offset: 4px;
     text-decoration-thickness: 4px;
-    /* text-decoration-style:wavy; */
     letter-spacing: -1px;   
 }
 
@@ -113,7 +109,6 @@
 .desc-1{
     color: var(--almost-white);
     line-height: 1.2;
-    /* letter-spacing: 1px; */
     font-size: 18px;
     font-weight: 300;
 }
