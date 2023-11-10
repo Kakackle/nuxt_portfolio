@@ -21,16 +21,14 @@ import learning_skills from "../learning_skills.json"
                 <p class="name-3">MARKOWSKI</p>
             </div>
             <p class="bio">Full-stack web dev, proficient in Django and Vue, interested in all things Python. Automation and Robot Control MSc., persistent learner, self-called musician, Łódź lover.</p>
-            <p class="bio">Skills:</p>
+            <p class="skills-title">Skills:</p>
             <div class="skills">
                 <SkillHover v-for="skill in skills" :key="skill.file" :skill="skill"></SkillHover>
             </div>
-            <div class="skills-titled">
-                <p class="bio">Currently working on:</p>
-                <div class="skills skills-working">
-                <SkillHover v-for="skill in learning_skills" :key="skill.file" :skill="skill"></SkillHover>
-                    <img class="skill-img drf" src="../assets/img/skills/flask.png">
-                </div>
+            
+            <p class="skills-title">Currently working on:</p>
+            <div class="skills skills-working">
+            <SkillHover v-for="skill in learning_skills" :key="skill.file" :skill="skill"></SkillHover>
             </div>
         </div>
     </section>
@@ -132,6 +130,14 @@ import learning_skills from "../learning_skills.json"
     gap: 20px;
     width: 100%;
     margin: 0 auto;
+}
+
+.skills-title{
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--almost-white);
+    /* text-decoration: underline; */
+    /* text-decoration-color: var(--purp-light); */
 }
 
 /* shiny button */

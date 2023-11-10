@@ -84,6 +84,7 @@ const project_show = ref(1);
     background-color: var(--purp-dark);
     width: 300px;
     height: 420px;
+    object-fit: contain;
 }
 
 .img-desc{

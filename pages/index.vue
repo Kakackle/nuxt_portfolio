@@ -10,7 +10,8 @@ const headers = [
     "Blog",
     "Insta",
     "Forum",
-    "Contact"
+    "Contact",
+    "React"
 ]
 
 // setting the header currently intersecting by reading intersecting target id (of the header)

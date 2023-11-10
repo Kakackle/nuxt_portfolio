@@ -13,5 +13,25 @@
         "file": "aws1.png",
         "name": "Amazon Web Services",
         "whiteback": true
+    },
+    {
+        "file": "flask.png",
+        "name": "Flask",
+        "whiteback": true
+    },
+    {
+        "file": "jest.png",
+        "name": "Jest",
+        "whiteback": false
+    },
+    {
+        "file": "Pytest.png",
+        "name": "Pytest",
+        "whiteback": false
+    },
+    {
+        "file": "next.png",
+        "name": "Next.js",
+        "whiteback": true
     }
 ]

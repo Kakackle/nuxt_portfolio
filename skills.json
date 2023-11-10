@@ -30,11 +30,6 @@
         "whiteback": false
     },
     {
-        "file": "Pytest.png",
-        "name": "Pytest",
-        "whiteback": false
-    },
-    {
         "file": "opencv.png",
         "name": "OpenCV",
         "whiteback": false

@@ -35,6 +35,7 @@ const img_path = base_path + card.img;
             </div>
         </div>
         <div class="links">
+            <p class="project-title">Links: </p>
             <div class="live-links" v-if="card.live.length > 0">
                 <a class="live hover-underline" v-for="(live, index) in card.live"
                 :href="live">Live {{index+1}}</a>
@@ -45,7 +46,7 @@ const img_path = base_path + card.img;
             </div>
         </div>
     </div>
-    <p class="project-title" v-else>...And more to come!</p>
+    <p class="project-title card" v-else>...And more to come!</p>
     <!-- sam opis, bez obrazka -->
     <!-- <div class="card" v-else>
         <div class="img-div">
@@ -186,6 +187,7 @@ const img_path = base_path + card.img;
     display: flex;
     align-self: center;
     gap: 20px;
+    align-items: center;
 }
 
 .live-links{

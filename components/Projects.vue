@@ -1,7 +1,7 @@
 <script setup>
 const cards = [
     {
-        name: "Kalopsia Effects / Django/Vue e-commerce store",
+        name: "Kalopsia Effects / Django/ Vue e-commerce store",
         img: "Sklep/page1.PNG",
         desc: "Guitar effect store with users, carts, detailed product pages, \
         reviews, a newsletter system and Stripe payment integration.",
@@ -20,6 +20,16 @@ const cards = [
         user following and post liking systems"],
         live: ["https://vue-blog-front.netlify.app/", "https://web-production-4c6b.up.railway.app/api/posts/"],
         git: ["https://github.com/Kakackle/vue_blog","https://github.com/Kakackle/django_blog"],
+    },
+    {
+        name: "Rate Your Stuff / Rect social platform",
+        img: "RYS/rys_1.png",
+        desc: "Account-based app for rating anything you want with categories, comments, CRUD operations backed by Supabase services",
+        tech: ["Supabase-hosted PostgreSQL database and authentication system",
+        "posting, commenting, filtering and account functionalities through CRUD operations",
+        "Redux and React Router for state management"],
+        live: ["https://rate-your-anything.vercel.app/"],
+        git: ["https://github.com/Kakackle/rate_your_anything"],
     },
     {
         name: "Totally not Instagram / Django",

@@ -65,6 +65,25 @@
        "desc": "A Django-based fullstack application based on accounts and model relations, utilizing model forms, authentication, filtering backends etc, to showcase Django as a fully capable fullstack framework, with the additonal usage of HTMX to enable form submission that refreshes only a part of a website with the newest database state for a smoother user experience"
     },
     {
+      "id": "React",
+        "title":"Rate Your Stuff / React social app",
+        "main_features":[
+           {
+              "img":"RYS/rys_1.png",
+              "desc":"Main page"
+           },
+           {
+              "img":"RYS/rys_2.png",
+              "desc":"Post page with comments/reviews"
+           },
+           {
+              "img":"RYS/rys_3.png",
+              "desc":"Supabase schema"
+           }
+        ],
+        "desc": ""
+     },
+    {
         "id": "Forum",
         "title":"A Django Forum app with a modern development workflow",
         "main_features":[
