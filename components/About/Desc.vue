@@ -6,8 +6,8 @@
     <div class="desc-div">
         <p class="desc-title">Programatically</p>
         <ul class="desc-div desc-div-list">
-            <li class="desc">Interested in learning new technologies, frameworks, languages, love the feeling of progress and making thinks work. My favoruite language is Python, but I've spent some time in Javascript, C#, C++ along with a lick of Java and C.</li>
-            <li class="desc">In python I have worked with OOP, libraries like OpenCV for computer vision tasks, Tensorflow and Pytorch for ML purposes and numpy and pandas for data-focused purposes.</li>
+            <li class="desc">Interested in learning new technologies, frameworks, languages, love the feeling of progress and making things work. My favourite language is Python, but I've spent some time in Javascript, C#, C++ along with a lick of Java and C.</li>
+            <li class="desc">In Python I have worked with OOP, libraries like OpenCV for computer vision tasks, Tensorflow and Pytorch for ML purposes and numpy and pandas for data-focused purposes.</li>
             <li class="desc">In C# I've worked with EmguCV (essentially a OpenCV port) for computer vision study tasks and Unity for my Master's thesis.</li>
             <li class="desc">C++ served me as a classic introduction to programming and a programmatic way of thinking as well as for Arduino-based personal and scholar projects.</li>
             <li class="desc">As part of my creative drive and for the purposes of fullstack dev, I also use Figma to create website layouts.</li>
@@ -22,7 +22,7 @@
     <div class="desc-div">
         <p class="desc-title">Education</p>
         <ul class="desc-div desc-div-list">
-            <li class="desc">During studies I mostly learned about control theory and applications, ways of controlling robots and the mechanical calculations required plus various technical topics such as Digital Signal Processing, Motor control, Optimization Methods, Electric circuits, physics and system simulation techniques, escpecially in MATLAB and Simulink. </li>
+            <li class="desc">During studies I mostly learned about control theory and its applications, ways of controlling robots and the mechanical calculations required plus various technical topics such as Digital Signal Processing, Motor control, Optimization Methods, Electric circuits, physics and system simulation techniques, especially in MATLAB and Simulink. </li>
             <li class="desc">For my Bachelor's thesis I created a mechanical system capable of visually assessing the state of a Rubik's cube, find a solution and solve it itself. The computer vision program was wrriten in C#, connected through UART to and Arduino unit controlling the robot.</li>
         </ul>
         <div class="project-images">

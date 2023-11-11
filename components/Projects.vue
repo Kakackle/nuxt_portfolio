@@ -1,4 +1,5 @@
 <script setup>
+/*
 const cards = [
     {
         name: "Kalopsia Effects / Django/ Vue e-commerce store",
@@ -52,6 +53,8 @@ const cards = [
         img:"",
     }
 ]
+*/
+import cards from "../cards.json";
 </script>
 
 <template>

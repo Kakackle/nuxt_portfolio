@@ -9,18 +9,18 @@
            },
            {
               "img": "Sklep/page1.PNG",
-              "desc": "Main store grid, with filtering and sorting options based on categories and object properties, paginated, with links to add to card or to favourites"
+              "desc": "Main store grid, with filtering and sorting options based on categories and object properties, paginated, with links to add to cart or to favourites"
            },
            {
               "img":"Sklep/page2.PNG",
-              "desc":"Product view with a photo wheel, a magnifier, product detail tabs, a review section and ordering options"
+              "desc":"Product view with a photo wheel, a photo magnifier, product detail tabs, a review section and ordering options"
            },
            {
               "img":"Sklep/page3.PNG",
-              "desc":"Cart view easily convertible into orders with saved addresses, discounts codes, shipping options"
+              "desc":"Cart view easily convertible into orders with saved user addresses, functional global discounts codes, shipping options"
            }
         ],
-        "desc": "The project serves as an example of a fledged out fullstack application utilizing a backend (Django) and a frontend (Vue) framework, including complex model relations, using a Postgresql database, capable of utilizing external services such as Stripe or SendGrid. Also utilizing full capacities of a Django-based application with session based auth, a built-in account system, database model-based forms etc, while being able to work with a dynamic frontend framework like Vue, speeding up front-end developemnt and allowing for the use of the component and reference system features."
+        "desc": "The project serves as an example of a fledged out fullstack application utilizing a backend (Django) and a frontend (Vue) framework, including complex model relations, using a PostgreSQL database, capable of utilizing external services such as Stripe or SendGrid. Also utilizing full capacities of a Django-based application with session based authentication, a built-in account system, database model-based forms etc, while being able to work with a dynamic frontend framework like Vue, speeding up front-end developemnt and allowing for the use of the component and reference system features."
      },
      {
         "id": "Blog",
@@ -28,7 +28,7 @@
         "main_features":[
            {
               "img":"Blog/Home.PNG",
-              "desc":"Paginated posts view with sorting and filtering by multiple data-based metrics, including likes, by followed users, date"
+              "desc":"Paginated posts view with sorting and filtering by multiple data-based metrics, including by likes, by followed users, by date"
            },
            {
               "img":"Blog/Post.PNG",
@@ -36,11 +36,11 @@
            },
            {
             "img":"Blog/post_create_cut.PNG",
-            "desc":"Post creation with a custom markdown editor and post preview, including multiple images uploading"
+            "desc":"Post creation with a custom markdown editor and post preview, including multiple images uploading form"
             },
            {
               "img":"Blog/api.PNG",
-              "desc":"API-based backend with an openapi schema (mostly) conforming to REST rules"
+              "desc":"API-based backend with an OpenAPI schema (mostly) conforming to REST rules"
            }
         ],
         "desc": "The app is a combination of a separate frontend built in Vue and a REST-style API backend built in Django. Allows for user creation, user following, post creation, editing and liking, commenting on posts and all related CRUD operations, whilst offering a slick, modern SPA-based interface, providing a separation of concerns for ease of development"
@@ -55,11 +55,11 @@
           },
           {
              "img":"Insta/Grid.PNG",
-             "desc":"Post grid filterable by tags, description, followed users, liekd posts and more"
+             "desc":"Post grid filterable by tags, description, followed users, liked posts and more"
           },
           {
              "img":"Insta/signup_form.PNG",
-             "desc":"Utilization of built-in Django features such as session-based authentication, database models forms and validation"
+             "desc":"Utilization of built-in Django features such as session-based authentication, database model forms and validation"
           }
        ],
        "desc": "A Django-based fullstack application based on accounts and model relations, utilizing model forms, authentication, filtering backends etc, to showcase Django as a fully capable fullstack framework, with the additonal usage of HTMX to enable form submission that refreshes only a part of a website with the newest database state for a smoother user experience"
@@ -70,15 +70,15 @@
         "main_features":[
            {
               "img":"RYS/rys_1.png",
-              "desc":"Main page"
+              "desc":"Main page with paginated user posts nad filtering by name and category"
            },
            {
               "img":"RYS/rys_2.png",
-              "desc":"Post page with comments/reviews"
+              "desc":"Post page with comments/reviews by users"
            },
            {
               "img":"RYS/rys_3.png",
-              "desc":"Supabase schema"
+              "desc":"Supabase backend schema"
            }
         ],
         "desc": ""
@@ -97,7 +97,7 @@
            },
            {
               "img":"Forum/github_actions.PNG",
-              "desc":"Implementation of Github actions, a test coverage, dockerizing"
+              "desc":"Implementation of Github actions, Test coverage, Dockerizing"
            }
         ],
         "desc": "The project in it's simplicity allows for easy implementation and testing of various modern development techniques such as composing the website service with a Postgresql database service, utilizing various testing techniques such as Pytest, styling with Flake8 and others"
