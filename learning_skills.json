@@ -15,6 +15,16 @@
         "whiteback": true
     },
     {
+        "file": "gcp.png",
+        "name": "Google Cloud Platform",
+        "whiteback": true
+    },
+    {
+        "file": "R.png",
+        "name": "R",
+        "whiteback": true
+    },
+    {
         "file": "flask.png",
         "name": "Flask",
         "whiteback": true

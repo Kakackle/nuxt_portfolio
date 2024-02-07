@@ -35,6 +35,16 @@
         "whiteback": false
     },
     {
+        "file": "pandas.png",
+        "name": "pandas",
+        "whiteback": false
+    },
+    {
+        "file": "tableau.png",
+        "name": "tableau",
+        "whiteback": true
+    },
+    {
         "file": "git.png",
         "name": "Git",
         "whiteback": false

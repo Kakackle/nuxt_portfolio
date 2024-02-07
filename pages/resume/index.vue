@@ -3,7 +3,7 @@
 
 <template>
 <main class="resume-main">
-    <iframe src="/MaciejMarkowski2023FullStack.pdf" frameborder="0" class="pdf"></iframe>
+    <iframe src="/MaciejMarkowskiCV2024.pdf" frameborder="0" class="pdf"></iframe>
 </main>
 </template>
 

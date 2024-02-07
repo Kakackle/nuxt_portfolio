@@ -4,7 +4,7 @@
 <template>
     <nav class="nav">
         <div class="nav-div">
-            <a ref="#" class="logo">MM23</a>
+            <a ref="#" class="logo">MM24</a>
             <ul class="nav-links">
                 <li class="link"><NuxtLink class="link" to="/">Home</NuxtLink></li>
                 <li class="link"><NuxtLink class="link" to="/about">About</NuxtLink></li>

@@ -43,6 +43,19 @@
         "git": ["https://github.com/Kakackle/django_forum"]
     },
     {
+        "name": "Lyrics Analysis",
+        "img": "Analysis/LyricsAnalysis.png",
+        "desc": "In-depth exploratory data analysis of song lyrics spanning multiple genres, decades, analyzing the structures, topical mentions, sentiments and others",
+        "tech": ["Pandas, plotly, dash, scikit-learn, NLP"],
+        "live": ["https://lyrics-analysis.onrender.com/"],
+        "git": ["https://github.com/Kakackle/lyrics_analysis"]
+    },
+    {
+        "name": "Data Science projects",
+        "img": "",
+        "live": ["https://public.tableau.com/app/profile/maciej.m5728/vizzes"]
+    },
+    {
         "img":""
     }
 ]
